@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>6.2. Push source strings and existing translations</title><link rel="stylesheet" type="text/css" href="Common_Content/css/default.css" /><link rel="stylesheet" media="print" href="Common_Content/css/print.css" type="text/css" /><meta name="generator" content="publican 2.6" /><meta name="package" content="Zanata-Zanata_Quickstart_Guide-1-en-US-0-2" /><link rel="home" href="index.html" title="Zanata Quickstart Guide" /><link rel="up" href="ch06.html" title="Chapter 6. Translate a software package in Zanata" /><link rel="prev" href="ch06.html" title="Chapter 6. Translate a software package in Zanata" /><link rel="next" href="ch07.html" title="Chapter 7. View translation project status in Zanata" /></head><body><p id="title"><a class="left" href="https://fedorahosted.org/publican"><img src="Common_Content/images/image_left.png" alt="Product Site" /></a><a class="right" href="https://fedorahosted.org/publican"><img src="Common_Content/images/image_right.png" alt="Documentation Site" /></a></p><ul class="docnav"><li class="previous"><a accesskey="p" href="ch06.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="ch07.html"><strong>Next</strong></a></li></ul><div class="section"><div class="titlepage"><div><div><h2 class="title" id="id857492">6.2. Push source strings and existing translations</h2></div></div></div><div class="para">
+				You can use Zanata to obtain translations for any software project that provides its source strings in GNU Gettext <code class="filename">.pot</code> file format and can consume translated <code class="filename">.po</code> files.
+			</div><div class="procedure"><h6>Procedure 6.2. Push software project .pot file(s) to Zanata for translation</h6><div class="para">
+					Follow this procedure to push a project's source strings to Zanata for translation. If you have existing translations you wish to push to the server along with source strings, refer to <a class="xref" href="ch06s02.html#push_with_translations">Procedure 6.3, “Push software project .pot file(s) and existing translations”</a>.
+				</div><ul><li class="step"><div class="para">
+						In the directory containing <code class="filename">zanata.xml</code>, run the command:
+					</div><div class="formalpara"><h5 class="formalpara" id="id857538">For zanata-python-client 1.2.4:</h5>
+							
+<pre class="screen"><code class="command">zanata po push --srcdir .</code></pre>
+						</div><div class="formalpara"><h5 class="formalpara" id="id591278">For zanata-python-client 1.2.6+:</h5>
+							
+<pre class="screen"><code class="command">zanata push</code></pre>
+						</div><div class="formalpara"><h5 class="formalpara" id="id591295">Result:</h5>
+							All <code class="filename">.pot</code> files in the <code class="filename">srcdir</code> are pushed to the Zanata server and are available for translation.
+						</div></li></ul></div><div class="note"><div class="admonition_header"><h2>Source string merging</h2></div><div class="admonition"><div class="para">
+					If you push a newer version of source strings to an ongoing Zanata translation project with translation already underway, the server will merge any existing translations for that project to preserve translation work so far. Any source language strings that had translations on the server before the push will have them after the push.
+				</div></div></div><div class="procedure"><h6>Procedure 6.3. Push software project .pot file(s) and existing translations</h6><div class="para">
+					Use this procedure to push a project's strings to Zanata along with existing translations.
+				</div><ul><li class="step"><div class="para">
+						In the directory containing <code class="filename">zanata.xml,</code>
+					</div><div class="formalpara"><h5 class="formalpara" id="id591355">For zanata-python-client 1.2.4:</h5>
+							
+<pre class="screen"><code class="command">zanata po push --srcdir . --import-po --transdir ./po</code></pre>
+							 run the command:
+						</div><div class="formalpara"><h5 class="formalpara" id="id591372">For zanata-python-client 1.2.6+:</h5>
+							
+<pre class="screen"><code class="command">zanata push --push-trans --transdir ./po</code></pre>
+							 run the command:
+						</div><div class="para">
+						Substitute the location of your existing <code class="filename">.po</code> files as the value for <code class="command">--transdir</code>. Optionally, specify a merging schema if you are pushing <code class="filename">.po</code> file translations into an ongoing Zanata translation project with existing server-side translations. See <a class="xref" href="ch06s02.html#note_on_target_merging">Target string merging</a>.
+					</div><div class="formalpara"><h5 class="formalpara" id="id614210">Result:</h5>
+							All <code class="filename">.pot</code> files in the <code class="filename">srcdir</code> are pushed to the Zanata server, along with all existing translations in <code class="filename">.po</code> files in the <code class="filename">transdir</code>.
+						</div></li></ul></div><div class="note" id="note_on_target_merging"><div class="admonition_header"><h2>Target string merging</h2></div><div class="admonition"><div class="para">
+					If you push <code class="filename">.po</code> translations to an ongoing translation project that has translations on the server, you have two different merging schemas.
+				</div><div class="formalpara"><h5 class="formalpara" id="id614258"> Merge Auto schema</h5>
+						The Merge Auto is the default schema, and is used when no schema is specified, or when the <code class="command">--merge auto</code> command switch is specified. The Merge Auto schema will add all new translations from the <code class="filename">.po</code> file (translations added to the <code class="filename">.po</code> file since the last import). So, if translations have been done offline in <code class="filename">.po</code> files, you can contribute these translations to your Zanata translation project. Where a string has been updated on the server, but remains unchanged in the <code class="filename">.po</code> file since the last import, the server-side translation is preserved. When a translation has been updated in both the <code class="filename">.po</code> file and the server since the last import, the <code class="filename">.po</code> file translation will overwrite the server-side translation.
+					</div><div class="formalpara"><h5 class="formalpara" id="id614299">Merge Import schema</h5>
+						The merge import schema is used when the <code class="command">--merge import</code> command switch is supplied. The Merge Import schema will overwrite all server-side translations with the <code class="filename">.po</code> files contents. Where a server-side translation exists and no translation exists in the <code class="filename">.po</code> file, the server-side translation is lost.
+					</div></div></div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="ch06.html"><strong>Prev</strong>Chapter 6. Translate a software package in Zanata</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="ch07.html"><strong>Next</strong>Chapter 7. View translation project status in Zan...</a></li></ul></body></html>

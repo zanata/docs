@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Chapter 2. Prerequisites for using a Zanata instance</title><link rel="stylesheet" type="text/css" href="Common_Content/css/default.css" /><link rel="stylesheet" media="print" href="Common_Content/css/print.css" type="text/css" /><meta name="generator" content="publican 2.6" /><meta name="package" content="Zanata-Zanata_Quickstart_Guide-1-en-US-0-2" /><link rel="home" href="index.html" title="Zanata Quickstart Guide" /><link rel="up" href="pt01.html" title="Part I. Developer and Writer Quickstart" /><link rel="prev" href="ch01.html" title="Chapter 1. Introducing Zanata" /><link rel="next" href="ch02s02.html" title="2.2. Install a Zanata client" /></head><body><p id="title"><a class="left" href="https://fedorahosted.org/publican"><img src="Common_Content/images/image_left.png" alt="Product Site" /></a><a class="right" href="https://fedorahosted.org/publican"><img src="Common_Content/images/image_right.png" alt="Documentation Site" /></a></p><ul class="docnav"><li class="previous"><a accesskey="p" href="ch01.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="ch02s02.html"><strong>Next</strong></a></li></ul><div class="chapter" id="chap_redhat_prereqs"><div class="titlepage"><div><div><h2 class="title">Chapter 2. Prerequisites for using a Zanata instance</h2></div></div></div><div class="toc"><dl><dt><span class="section"><a href="chap_redhat_prereqs.html#id483276">2.1. Prerequisites for using the Fedora Zanata instance</a></span></dt><dt><span class="section"><a href="ch02s02.html">2.2. Install a Zanata client</a></span></dt><dd><dl><dt><span class="section"><a href="ch02s02.html#id596015">2.2.1. Python Client</a></span></dt><dt><span class="section"><a href="ch02s02s02.html">2.2.2. Maven Client</a></span></dt></dl></dd></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" id="id483276">2.1. Prerequisites for using the Fedora Zanata instance</h2></div></div></div><div class="procedure" id="fedora_create_FAS_account"><h6>Procedure 2.1. Create a Fedora Account System (FAS) account</h6><div class="para">
+					You need a FAS (Fedora Account System) account to use the Fedora Zanata instance. Follow this procedure to create a FAS account if you do not already have one.
+				</div><ol class="1"><li class="step"><div class="para">
+						Go to <a href="https://admin.fedoraproject.org/accounts/">https://admin.fedoraproject.org/accounts/</a>
+					</div></li><li class="step"><div class="para">
+						Click "New Account"
+					</div></li><li class="step"><div class="para">
+						Fill in your details and sign up
+					</div><div class="formalpara"><h5 class="formalpara" id="id832759">Result:</h5>
+							You have a FAS account for use with the Fedora Zanata instance.
+						</div></li></ol></div><div class="procedure" id="fedora_validate_account"><h6>Procedure 2.2. Validate your Fedora Zanata account </h6><ol class="1"><li class="step"><div class="para">
+						Log in to <a href="https://fedora.zanata.org">https://fedora.zanata.org</a> using your FAS account.
+					</div></li><li class="step"><div class="para">
+						The first time you sign in you are presented with an "Edit Profile" form pre-filled with your username and a suggested email address. Make sure that the email address is correct, modify it if necessary, and click "Save".
+					</div></li><li class="step"><div class="para">
+						Check your email for the validation email. Click the link in the email to validate your FAS account for access to Zanata.
+					</div></li></ol></div><div class="procedure" id="fedora_configure_local_machine"><h6>Procedure 2.3. Configure your local machine with credentials for fedora.zanata.org</h6><ol class="1"><li class="step"><div class="para">
+						Use your FAS credentials to login at <a href="https://fedora.zanata.org">https://fedora.zanata.org</a>.
+					</div></li><li class="step"><div class="para">
+						Click "My Profile"
+					</div></li><li class="step"><div class="para">
+						If you do not have a current API key, click "Regenerate API key"
+					</div></li><li class="step"><div class="para">
+						Copy the API key value
+					</div></li><li class="step"><div class="para">
+						Create the file <code class="filename">~/.config/zanata.ini</code>
+					</div></li><li class="step"><div class="para">
+						Paste the following into the file, replacing the username and key values with your FAS username and the API key, respectively:
+					</div><pre class="screen">[defaults]
+debug = false
+[servers]
+fedora.url = https://fedora.zanata.org/zanata
+fedora.username = <em class="replaceable"><code>&lt;your FAS name&gt;</code></em>
+fedora.key = <em class="replaceable"><code>&lt;API key&gt;</code></em></pre><div class="formalpara"><h5 class="formalpara" id="id489538">Result:</h5>
+							Your machine is now configured to communicate with the Fedora Zanata instance.
+						</div></li></ol></div></div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="ch01.html"><strong>Prev</strong>Chapter 1. Introducing Zanata</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="ch02s02.html"><strong>Next</strong>2.2. Install a Zanata client</a></li></ul></body></html>

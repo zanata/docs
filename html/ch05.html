@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Chapter 5. Translate a Publican project in Zanata</title><link rel="stylesheet" type="text/css" href="Common_Content/css/default.css" /><link rel="stylesheet" media="print" href="Common_Content/css/print.css" type="text/css" /><meta name="generator" content="publican 2.6" /><meta name="package" content="Zanata-Zanata_Quickstart_Guide-1-en-US-0-2" /><link rel="home" href="index.html" title="Zanata Quickstart Guide" /><link rel="up" href="pt01.html" title="Part I. Developer and Writer Quickstart" /><link rel="prev" href="ch04.html" title="Chapter 4. Configure a Zanata translation project" /><link rel="next" href="ch05s02.html" title="5.2. Push source strings and existing translations" /></head><body><p id="title"><a class="left" href="https://fedorahosted.org/publican"><img src="Common_Content/images/image_left.png" alt="Product Site" /></a><a class="right" href="https://fedorahosted.org/publican"><img src="Common_Content/images/image_right.png" alt="Documentation Site" /></a></p><ul class="docnav"><li class="previous"><a accesskey="p" href="ch04.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="ch05s02.html"><strong>Next</strong></a></li></ul><div class="chapter" id="id656310"><div class="titlepage"><div><div><h2 class="title">Chapter 5. Translate a Publican project in Zanata</h2></div></div></div><div class="toc"><dl><dt><span class="section"><a href="ch05.html#id656327">5.1. Publican project integration</a></span></dt><dt><span class="section"><a href="ch05s02.html">5.2. Push source strings and existing translations</a></span></dt></dl></div><div class="para">
+			<a href="https://fedorahosted.org/publican/">Publican</a> is a popular open source Docbook publishing tool chain. It is used for writing documentation. Zanata and Publican - two great flavours that taste great together.
+		</div><div class="section"><div class="titlepage"><div><div><h2 class="title" id="id656327">5.1. Publican project integration</h2></div></div></div><div class="para">
+				Follow this procedure to integrate a Publican book with a Zanata instance for translation.
+			</div><div class="procedure" id="redhat_configure_project"><h6>Procedure 5.1. Configure your Publican project for translation in Zanata</h6><ol class="1"><li class="step"><div class="para">
+						Complete the prerequisites in <a class="xref" href="chap_redhat_prereqs.html">Chapter 2, <em>Prerequisites for using a Zanata instance</em></a> and <a class="xref" href="ch04.html#chap_redhat_create_project">Chapter 4, <em>Configure a Zanata translation project</em></a>.
+					</div></li><li class="step"><div class="para">
+						Log in to the Zanata instance.
+					</div></li><li class="step"><div class="para">
+						Click "Projects"
+					</div></li><li class="step"><div class="para">
+						Locate your translation project, and click it
+					</div></li><li class="step"><div class="para">
+						On your project's page, click "Configure file" to download the <code class="filename">zanata.xml</code> file
+					</div></li><li class="step"><div class="para">
+						Copy the <code class="filename">zanata.xml</code> file to the directory containing your book's <code class="filename">publican.cfg</code> file
+					</div></li></ol></div><div class="procedure" id="redhat_create_pot_files"><h6>Procedure 5.2. Create publican translation files for Zanata</h6><ul><li class="step"><div class="para">
+						In the directory containing publican.cfg, run the command:
+					</div><pre class="screen"><code class="command">publican update_pot</code></pre></li></ul></div></div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="ch04.html"><strong>Prev</strong>Chapter 4. Configure a Zanata translation project</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="ch05s02.html"><strong>Next</strong>5.2. Push source strings and existing translations</a></li></ul></body></html>

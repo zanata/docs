@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Zanata Quickstart Guide</title><link rel="stylesheet" type="text/css" href="Common_Content/css/default.css" /><link rel="stylesheet" media="print" href="Common_Content/css/print.css" type="text/css" /><meta name="generator" content="publican 2.6" /><meta name="package" content="Zanata-Zanata_Quickstart_Guide-1-en-US-0-2" /><meta name="description" content="This book contains quickstart guides for the Red Hat, Fedora, and JBoss Zanata instances." /></head><body><p id="title"><a class="left" href="https://fedorahosted.org/publican"><img src="Common_Content/images/image_left.png" alt="Product Site" /></a><a class="right" href="https://fedorahosted.org/publican"><img src="Common_Content/images/image_right.png" alt="Documentation Site" /></a></p><div xml:lang="en-US" class="book" id="id745950" lang="en-US"><div class="titlepage"><div><div class="producttitle"><span class="productname">Zanata</span> <span class="productnumber">1</span></div><div><h1 id="id745950" class="title">Zanata Quickstart Guide</h1></div><div><h2 class="subtitle">Quickstart guide for Zanata</h2></div><p class="edition">Edition 0</p><div><h3 class="corpauthor">
+		<span class="inlinemediaobject"><object data="Common_Content/images/title_logo.svg" type="image/svg+xml"> </object></span>
+
+	</h3></div><div><div xml:lang="en-US" class="authorgroup" lang="en-US"><div class="author"><h3 class="author"><span class="firstname">Joshua</span> <span class="surname">Wulf</span></h3><code class="email"><a class="email" href="mailto:jwulf@fedoraproject.org">jwulf@fedoraproject.org</a></code></div></div></div><hr /><div><div id="id768280" class="legalnotice"><h1 class="legalnotice">Legal Notice</h1><div class="para">
+		Copyright <span class="trademark"></span>© 2011 | You need to change the HOLDER entity in the en-US/Zanata_User_Guide.ent file | This material may only be distributed subject to the terms and conditions set forth in the GNU Free Documentation License (GFDL), V1.2 or later (the latest version is presently available at <a href="http://www.gnu.org/licenses/fdl.txt">http://www.gnu.org/licenses/fdl.txt</a>).
+	</div></div></div><div><div class="abstract"><h6>Abstract</h6><div class="para">
+			This book contains quickstart guides for the Red Hat, Fedora, and JBoss Zanata instances.
+		</div></div></div></div><hr /></div><div class="toc"><dl><dt><span class="preface"><a href="#pref-Zanata_User_Guide-Preface">Preface</a></span></dt><dd><dl><dt><span class="section"><a href="#id768230">1. Document Conventions</a></span></dt><dd><dl><dt><span class="section"><a href="#id911522">1.1. Typographic Conventions</a></span></dt><dt><span class="section"><a href="#id836215">1.2. Pull-quote Conventions</a></span></dt><dt><span class="section"><a href="#id793723">1.3. Notes and Warnings</a></span></dt></dl></dd><dt><span class="section"><a href="#id751767">2. We Need Feedback!</a></span></dt></dl></dd><dt><span class="part"><a href="#id720792">I. Developer and Writer Quickstart</a></span></dt><dd><dl><dt><span class="chapter"><a href="#id669733">1. Introducing Zanata</a></span></dt><dt><span class="chapter"><a href="#chap_redhat_prereqs">2. Prerequisites for using a Zanata instance</a></span></dt><dd><dl><dt><span class="section"><a href="#id588842">2.1. Prerequisites for using the Fedora Zanata instance</a></span></dt><dt><span class="section"><a href="#id617940">2.2. Install a Zanata client</a></span></dt><dd><dl><dt><span class="section"><a href="#id617959">2.2.1. Python Client</a></span></dt><dt><span class="section"><a href="#id522269">2.2.2. Maven Client</a></span></dt></dl></dd></dl></dd><dt><span class="chapter"><a href="#chap_request_project">3. Request a Zanata translation project</a></span></dt><dd><dl><dt><span class="section"><a href="#id512211">3.1. Request a translation project for the Fedora Zanata instance</a></span></dt></dl></dd><dt><span class="chapter"><a href="#id768516">4. Configure a Zanata translation project</a></span></dt><dt><span class="chapter"><a href="#id897828">5. Translate a Publican project in Zanata</a></span></dt><dd><dl><dt><span class="section"><a href="#id897845">5.1. Publican project integration</a></span></dt><dt><span class="section"><a href="#id625505">5.2. Push source strings and existing translations</a></span></dt></dl></dd><dt><span class="chapter"><a href="#id779633">6. Translate a software package in Zanata</a></span></dt><dd><dl><dt><span class="section"><a href="#id779652">6.1. Software project integration</a></span></dt><dt><span class="section"><a href="#id439919">6.2. Push source strings and existing translations</a></span></dt></dl></dd><dt><span class="chapter"><a href="#id605162">7. View translation project status in Zanata</a></span></dt><dt><span class="chapter"><a href="#id558223">8. Pull translations from Zanata</a></span></dt><dd><dl><dt><span class="section"><a href="#id680086">8.1. Pull translations for a Publican project </a></span></dt><dt><span class="section"><a href="#id685539">8.2. Pull translations for a software project</a></span></dt></dl></dd></dl></dd><dt><span class="part"><a href="#id667656">II. Translator Quickstart</a></span></dt><dd><dl><dt><span class="chapter"><a href="#id720663">9. Contributing translations</a></span></dt><dd><dl><dt><span class="section"><a href="#id793885">9.1. Pre-requisites</a></span></dt><dt><span class="section"><a href="#id775306">9.2. Join a language team</a></span></dt></dl></dd></dl></dd><dt><span class="appendix"><a href="#appe-Zanata_User_Guide-Revision_History">A. Revision History</a></span></dt><dt><span class="index"><a href="#id737602">Index</a></span></dt></dl></div><div xml:lang="en-US" class="preface" id="pref-Zanata_User_Guide-Preface" lang="en-US"><div class="titlepage"><div><div><h1 class="title">Preface</h1></div></div></div><div xml:lang="en-US" class="section" lang="en-US"><div class="titlepage"><div><div><h2 class="title" id="id768230">1. Document Conventions</h2></div></div></div><div class="para">
+		This manual uses several conventions to highlight certain words and phrases and draw attention to specific pieces of information.
+	</div><div class="para">
+		In PDF and paper editions, this manual uses typefaces drawn from the <a href="https://fedorahosted.org/liberation-fonts/">Liberation Fonts</a> set. The Liberation Fonts set is also used in HTML editions if the set is installed on your system. If not, alternative but equivalent typefaces are displayed. Note: Red Hat Enterprise Linux 5 and later includes the Liberation Fonts set by default.
+	</div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id911522">1.1. Typographic Conventions</h3></div></div></div><div class="para">
+			Four typographic conventions are used to call attention to specific words and phrases. These conventions, and the circumstances they apply to, are as follows.
+		</div><div class="para">
+			<code class="literal">Mono-spaced Bold</code>
+		</div><div class="para">
+			Used to highlight system input, including shell commands, file names and paths. Also used to highlight keycaps and key combinations. For example:
+		</div><div class="blockquote"><blockquote class="blockquote"><div class="para">
+				To see the contents of the file <code class="filename">my_next_bestselling_novel</code> in your current working directory, enter the <code class="command">cat my_next_bestselling_novel</code> command at the shell prompt and press <span class="keycap"><strong>Enter</strong></span> to execute the command.
+			</div></blockquote></div><div class="para">
+			The above includes a file name, a shell command and a keycap, all presented in mono-spaced bold and all distinguishable thanks to context.
+		</div><div class="para">
+			Key combinations can be distinguished from keycaps by the hyphen connecting each part of a key combination. For example:
+		</div><div class="blockquote"><blockquote class="blockquote"><div class="para">
+				Press <span class="keycap"><strong>Enter</strong></span> to execute the command.
+			</div><div class="para">
+				Press <span class="keycap"><strong>Ctrl</strong></span>+<span class="keycap"><strong>Alt</strong></span>+<span class="keycap"><strong>F2</strong></span> to switch to the first virtual terminal. Press <span class="keycap"><strong>Ctrl</strong></span>+<span class="keycap"><strong>Alt</strong></span>+<span class="keycap"><strong>F1</strong></span> to return to your X-Windows session.
+			</div></blockquote></div><div class="para">
+			The first paragraph highlights the particular keycap to press. The second highlights two key combinations (each a set of three keycaps with each set pressed simultaneously).
+		</div><div class="para">
+			If source code is discussed, class names, methods, functions, variable names and returned values mentioned within a paragraph will be presented as above, in <code class="literal">mono-spaced bold</code>. For example:
+		</div><div class="blockquote"><blockquote class="blockquote"><div class="para">
+				File-related classes include <code class="classname">filesystem</code> for file systems, <code class="classname">file</code> for files, and <code class="classname">dir</code> for directories. Each class has its own associated set of permissions.
+			</div></blockquote></div><div class="para">
+			<span class="application"><strong>Proportional Bold</strong></span>
+		</div><div class="para">
+			This denotes words or phrases encountered on a system, including application names; dialog box text; labeled buttons; check-box and radio button labels; menu titles and sub-menu titles. For example:
+		</div><div class="blockquote"><blockquote class="blockquote"><div class="para">
+				Choose <span class="guimenu"><strong>System</strong></span> → <span class="guisubmenu"><strong>Preferences</strong></span> → <span class="guimenuitem"><strong>Mouse</strong></span> from the main menu bar to launch <span class="application"><strong>Mouse Preferences</strong></span>. In the <span class="guilabel"><strong>Buttons</strong></span> tab, click the <span class="guilabel"><strong>Left-handed mouse</strong></span> check box and click <span class="guibutton"><strong>Close</strong></span> to switch the primary mouse button from the left to the right (making the mouse suitable for use in the left hand).
+			</div><div class="para">
+				To insert a special character into a <span class="application"><strong>gedit</strong></span> file, choose <span class="guimenu"><strong>Applications</strong></span> → <span class="guisubmenu"><strong>Accessories</strong></span> → <span class="guimenuitem"><strong>Character Map</strong></span> from the main menu bar. Next, choose <span class="guimenu"><strong>Search</strong></span> → <span class="guimenuitem"><strong>Find…</strong></span> from the <span class="application"><strong>Character Map</strong></span> menu bar, type the name of the character in the <span class="guilabel"><strong>Search</strong></span> field and click <span class="guibutton"><strong>Next</strong></span>. The character you sought will be highlighted in the <span class="guilabel"><strong>Character Table</strong></span>. Double-click this highlighted character to place it in the <span class="guilabel"><strong>Text to copy</strong></span> field and then click the <span class="guibutton"><strong>Copy</strong></span> button. Now switch back to your document and choose <span class="guimenu"><strong>Edit</strong></span> → <span class="guimenuitem"><strong>Paste</strong></span> from the <span class="application"><strong>gedit</strong></span> menu bar.
+			</div></blockquote></div><div class="para">
+			The above text includes application names; system-wide menu names and items; application-specific menu names; and buttons and text found within a GUI interface, all presented in proportional bold and all distinguishable by context.
+		</div><div class="para">
+			<code class="command"><em class="replaceable"><code>Mono-spaced Bold Italic</code></em></code> or <span class="application"><strong><em class="replaceable"><code>Proportional Bold Italic</code></em></strong></span>
+		</div><div class="para">
+			Whether mono-spaced bold or proportional bold, the addition of italics indicates replaceable or variable text. Italics denotes text you do not input literally or displayed text that changes depending on circumstance. For example:
+		</div><div class="blockquote"><blockquote class="blockquote"><div class="para">
+				To connect to a remote machine using ssh, type <code class="command">ssh <em class="replaceable"><code>username</code></em>@<em class="replaceable"><code>domain.name</code></em></code> at a shell prompt. If the remote machine is <code class="filename">example.com</code> and your username on that machine is john, type <code class="command">ssh john@example.com</code>.
+			</div><div class="para">
+				The <code class="command">mount -o remount <em class="replaceable"><code>file-system</code></em></code> command remounts the named file system. For example, to remount the <code class="filename">/home</code> file system, the command is <code class="command">mount -o remount /home</code>.
+			</div><div class="para">
+				To see the version of a currently installed package, use the <code class="command">rpm -q <em class="replaceable"><code>package</code></em></code> command. It will return a result as follows: <code class="command"><em class="replaceable"><code>package-version-release</code></em></code>.
+			</div></blockquote></div><div class="para">
+			Note the words in bold italics above — username, domain.name, file-system, package, version and release. Each word is a placeholder, either for text you enter when issuing a command or for text displayed by the system.
+		</div><div class="para">
+			Aside from standard usage for presenting the title of a work, italics denotes the first use of a new and important term. For example:
+		</div><div class="blockquote"><blockquote class="blockquote"><div class="para">
+				Publican is a <em class="firstterm">DocBook</em> publishing system.
+			</div></blockquote></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id836215">1.2. Pull-quote Conventions</h3></div></div></div><div class="para">
+			Terminal output and source code listings are set off visually from the surrounding text.
+		</div><div class="para">
+			Output sent to a terminal is set in <code class="computeroutput">mono-spaced roman</code> and presented thus:
+		</div><pre class="screen">books        Desktop   documentation  drafts  mss    photos   stuff  svn
+books_tests  Desktop1  downloads      images  notes  scripts  svgs</pre><div class="para">
+			Source-code listings are also set in <code class="computeroutput">mono-spaced roman</code> but add syntax highlighting as follows:
+		</div><pre class="programlisting">package org.<span class="perl_Function">jboss</span>.<span class="perl_Function">book</span>.<span class="perl_Function">jca</span>.<span class="perl_Function">ex1</span>;
+
+<span class="perl_Keyword">import</span> javax.naming.InitialContext;
+
+<span class="perl_Keyword">public</span> <span class="perl_Keyword">class</span> ExClient
+{
+   <span class="perl_Keyword">public</span> <span class="perl_DataType">static</span> <span class="perl_DataType">void</span> <span class="perl_Function">main</span>(String args[]) 
+       <span class="perl_Keyword">throws</span> Exception
+   {
+      InitialContext iniCtx = <span class="perl_Keyword">new</span> InitialContext();
+      Object         ref    = iniCtx.<span class="perl_Function">lookup</span>(<span class="perl_String">"EchoBean"</span>);
+      EchoHome       home   = (EchoHome) ref;
+      Echo           echo   = home.<span class="perl_Function">create</span>();
+
+      System.<span class="perl_Function">out</span>.<span class="perl_Function">println</span>(<span class="perl_String">"Created Echo"</span>);
+
+      System.<span class="perl_Function">out</span>.<span class="perl_Function">println</span>(<span class="perl_String">"Echo.echo('Hello') = "</span> + echo.<span class="perl_Function">echo</span>(<span class="perl_String">"Hello"</span>));
+   }
+}</pre></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id793723">1.3. Notes and Warnings</h3></div></div></div><div class="para">
+			Finally, we use three visual styles to draw attention to information that might otherwise be overlooked.
+		</div><div class="note"><div class="admonition_header"><h2>Note</h2></div><div class="admonition"><div class="para">
+				Notes are tips, shortcuts or alternative approaches to the task at hand. Ignoring a note should have no negative consequences, but you might miss out on a trick that makes your life easier.
+			</div></div></div><div class="important"><div class="admonition_header"><h2>Important</h2></div><div class="admonition"><div class="para">
+				Important boxes detail things that are easily missed: configuration changes that only apply to the current session, or services that need restarting before an update will apply. Ignoring a box labeled 'Important' will not cause data loss but may cause irritation and frustration.
+			</div></div></div><div class="warning"><div class="admonition_header"><h2>Warning</h2></div><div class="admonition"><div class="para">
+				Warnings should not be ignored. Ignoring warnings will most likely cause data loss.
+			</div></div></div></div></div><div xml:lang="en-US" class="section" lang="en-US"><div class="titlepage"><div><div><h2 class="title" id="id751767">2. We Need Feedback!</h2></div></div></div><a id="id775089" class="indexterm"></a><div class="para">
+		You should over ride this by creating your own local Feedback.xml file.
+	</div></div></div><div xml:lang="en-US" class="part" id="id720792" lang="en-US"><div class="titlepage"><div><div><h1 class="title">Part I. Developer and Writer Quickstart</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl><dt><span class="chapter"><a href="#id669733">1. Introducing Zanata</a></span></dt><dt><span class="chapter"><a href="#chap_redhat_prereqs">2. Prerequisites for using a Zanata instance</a></span></dt><dd><dl><dt><span class="section"><a href="#id588842">2.1. Prerequisites for using the Fedora Zanata instance</a></span></dt><dt><span class="section"><a href="#id617940">2.2. Install a Zanata client</a></span></dt><dd><dl><dt><span class="section"><a href="#id617959">2.2.1. Python Client</a></span></dt><dt><span class="section"><a href="#id522269">2.2.2. Maven Client</a></span></dt></dl></dd></dl></dd><dt><span class="chapter"><a href="#chap_request_project">3. Request a Zanata translation project</a></span></dt><dd><dl><dt><span class="section"><a href="#id512211">3.1. Request a translation project for the Fedora Zanata instance</a></span></dt></dl></dd><dt><span class="chapter"><a href="#id768516">4. Configure a Zanata translation project</a></span></dt><dt><span class="chapter"><a href="#id897828">5. Translate a Publican project in Zanata</a></span></dt><dd><dl><dt><span class="section"><a href="#id897845">5.1. Publican project integration</a></span></dt><dt><span class="section"><a href="#id625505">5.2. Push source strings and existing translations</a></span></dt></dl></dd><dt><span class="chapter"><a href="#id779633">6. Translate a software package in Zanata</a></span></dt><dd><dl><dt><span class="section"><a href="#id779652">6.1. Software project integration</a></span></dt><dt><span class="section"><a href="#id439919">6.2. Push source strings and existing translations</a></span></dt></dl></dd><dt><span class="chapter"><a href="#id605162">7. View translation project status in Zanata</a></span></dt><dt><span class="chapter"><a href="#id558223">8. Pull translations from Zanata</a></span></dt><dd><dl><dt><span class="section"><a href="#id680086">8.1. Pull translations for a Publican project </a></span></dt><dt><span class="section"><a href="#id685539">8.2. Pull translations for a software project</a></span></dt></dl></dd></dl></div><div class="chapter" id="id669733"><div class="titlepage"><div><div><h2 class="title">Chapter 1. Introducing Zanata</h2></div></div></div><div class="para">
+			Zanata is an online system for managing localization projects. <em class="firstterm">Localization</em> is the process of translating software interfaces or documentation into the various local languages used around the world.
+		</div><div class="para">
+			Zanata allows a software developer or a documentation writer to provide their strings, have those strings localised into specific target languages by a community of translators, then retrieve the localized strings to build a localized version of the software or documentation.
+		</div><div class="para">
+			The Zanata server implements a REST interface for pushing and pulling source and translated strings, an web-browser based translation editor, and a server-wide translation memory for translation reuse.
+		</div><div class="para">
+			Cross-platform Zanata clients are available written in Python and Maven.
+		</div></div><div class="chapter" id="chap_redhat_prereqs"><div class="titlepage"><div><div><h2 class="title">Chapter 2. Prerequisites for using a Zanata instance</h2></div></div></div><div class="toc"><dl><dt><span class="section"><a href="#id588842">2.1. Prerequisites for using the Fedora Zanata instance</a></span></dt><dt><span class="section"><a href="#id617940">2.2. Install a Zanata client</a></span></dt><dd><dl><dt><span class="section"><a href="#id617959">2.2.1. Python Client</a></span></dt><dt><span class="section"><a href="#id522269">2.2.2. Maven Client</a></span></dt></dl></dd></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" id="id588842">2.1. Prerequisites for using the Fedora Zanata instance</h2></div></div></div><div class="procedure" id="fedora_create_FAS_account"><h6>Procedure 2.1. Create a Fedora Account System (FAS) account</h6><div class="para">
+					You need a FAS (Fedora Account System) account to use the Fedora Zanata instance. Follow this procedure to create a FAS account if you do not already have one.
+				</div><ol class="1"><li class="step"><div class="para">
+						Go to <a href="https://admin.fedoraproject.org/accounts/">https://admin.fedoraproject.org/accounts/</a>
+					</div></li><li class="step"><div class="para">
+						Click "New Account"
+					</div></li><li class="step"><div class="para">
+						Fill in your details and sign up
+					</div><div class="formalpara"><h5 class="formalpara" id="id795432">Result:</h5>
+							You have a FAS account for use with the Fedora Zanata instance.
+						</div></li></ol></div><div class="procedure" id="fedora_validate_account"><h6>Procedure 2.2. Validate your Fedora Zanata account </h6><ol class="1"><li class="step"><div class="para">
+						Log in to <a href="https://fedora.zanata.org">https://fedora.zanata.org</a> using your FAS account.
+					</div></li><li class="step"><div class="para">
+						The first time you sign in you are presented with an "Edit Profile" form pre-filled with your username and a suggested email address. Make sure that the email address is correct, modify it if necessary, and click "Save".
+					</div></li><li class="step"><div class="para">
+						Check your email for the validation email. Click the link in the email to validate your FAS account for access to Zanata.
+					</div></li></ol></div><div class="procedure" id="fedora_configure_local_machine"><h6>Procedure 2.3. Configure your local machine with credentials for fedora.zanata.org</h6><ol class="1"><li class="step"><div class="para">
+						Use your FAS credentials to login at <a href="https://fedora.zanata.org">https://fedora.zanata.org</a>.
+					</div></li><li class="step"><div class="para">
+						Click "My Profile"
+					</div></li><li class="step"><div class="para">
+						If you do not have a current API key, click "Regenerate API key"
+					</div></li><li class="step"><div class="para">
+						Copy the API key value
+					</div></li><li class="step"><div class="para">
+						Create the file <code class="filename">~/.config/zanata.ini</code>
+					</div></li><li class="step"><div class="para">
+						Paste the following into the file, replacing the username and key values with your FAS username and the API key, respectively:
+					</div><pre class="screen">[defaults]
+debug = false
+[servers]
+fedora.url = https://fedora.zanata.org/zanata
+fedora.username = <em class="replaceable"><code>&lt;your FAS name&gt;</code></em>
+fedora.key = <em class="replaceable"><code>&lt;API key&gt;</code></em></pre><div class="formalpara"><h5 class="formalpara" id="id617925">Result:</h5>
+							Your machine is now configured to communicate with the Fedora Zanata instance.
+						</div></li></ol></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" id="id617940">2.2. Install a Zanata client</h2></div></div></div><div class="para">
+				A Zanata client is required to push or pull strings from the Zanata server. It is not required for doing translation work.
+			</div><div class="para">
+				There are two Zanata clients. One is written in python, one is written in maven. Java software developers who use maven to build their software will be . The Python client is packaged as an rpm for Red Hat Enterprise Linux and Fedora, and recommended for managed environments. Windows and Mac OS X users are advised to use the maven client.
+			</div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id617959">2.2.1. Python Client</h3></div></div></div><div class="procedure" id="fedora_install_client"><h6>Procedure 2.4. Install the Zanata python client</h6><ol class="1"><li class="step"><div class="para">
+							If you are using Fedora 15, issue the following command with root privileges:
+						</div><pre class="screen"><code class="command">yum install zanata-python-client</code></pre></li><li class="step"><div class="para">
+							If you are using a version of Red Hat Enterprise Linux, you can obtain the client from <a href="http://fedoraproject.org/wiki/EPEL">EPEL (Extra Packages for Enterprise Linux)</a>.
+						</div><ol class="a"><li class="step"><div class="para">
+									Enable the EPEL repository following the instructions at <a href="http://fedoraproject.org/wiki/EPEL">EPEL (Extra Packages for Enterprise Linux)</a>.
+								</div></li><li class="step"><div class="para">
+									Issue the following command with root privileges:
+								</div><pre class="screen"><code class="command">yum install zanata-python-client</code></pre></li></ol></li></ol></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id522269">2.2.2. Maven Client</h3></div></div></div><div class="para">
+					Coming soon
+				</div></div></div></div><div class="chapter" id="chap_request_project"><div class="titlepage"><div><div><h2 class="title">Chapter 3. Request a Zanata translation project</h2></div></div></div><div class="toc"><dl><dt><span class="section"><a href="#id512211">3.1. Request a translation project for the Fedora Zanata instance</a></span></dt></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" id="id512211">3.1. Request a translation project for the Fedora Zanata instance</h2></div></div></div><div class="procedure" id="fedora_request_project"><h6>Procedure 3.1. Create a request for a Zanata translation project for your book</h6><ol class="1"><li class="step"><div class="para">
+						Send an email to zanata-requests@redhat.com
+					</div></li><li class="step"><div class="para">
+						Set the subject to "New Translation Project"
+					</div></li><li class="step"><div class="para">
+						In the body give:
+					</div><div class="itemizedlist"><ul><li class="listitem"><div class="para">
+								the name of your project
+							</div></li><li class="listitem"><div class="para">
+								the name of the book or package
+							</div></li><li class="listitem"><div class="para">
+								your FAS username
+							</div></li><li class="listitem"><div class="para">
+								the FAS names of any additional maintainers
+							</div></li></ul></div><div class="formalpara"><h5 class="formalpara" id="id719123">Result:</h5>
+							An administrator creates a translation project and makes you a maintainer. You receive an email when your translation project is ready. Log out of Zanata and log in again to ensure that all security permissions are updated.
+						</div></li></ol></div></div></div><div class="chapter" id="id768516"><div class="titlepage"><div><div><h2 class="title">Chapter 4. Configure a Zanata translation project</h2></div></div></div><div class="procedure" id="redhat_select_target_langs"><h6>Procedure 4.1. Select target languages for the project</h6><ol class="1"><li class="step"><div class="para">
+					When your translation project is created, log in to the Zanata instance.
+				</div></li><li class="step"><div class="para">
+					Click Projects
+				</div></li><li class="step"><div class="para">
+					Locate your translation project, and click it
+				</div></li><li class="step"><div class="para">
+					On your project's page, click "Edit Project"
+				</div></li><li class="step"><div class="para">
+					Move desired languages to "Selected Locales"
+				</div></li><li class="step"><div class="para">
+					Click "Update"
+				</div><div class="formalpara"><h5 class="formalpara" id="id621011">Result:</h5>
+						You return to the translation project page
+					</div></li></ol></div><div class="procedure" id="redhat_project_version"><h6>Procedure 4.2. Create a project version</h6><ol class="1"><li class="step"><div class="para">
+					When your translation project is created, log in to the Zanata instance.
+				</div></li><li class="step"><div class="para">
+					Click Projects
+				</div></li><li class="step"><div class="para">
+					Locate your translation project, and click it
+				</div></li><li class="step"><div class="para">
+					On your project's page, click "Create Version"
+				</div></li><li class="step"><div class="para">
+					Provide a Version ID in the ID field. The Version ID is an arbitrary value that is used to match a set of translations in Zanata with an svn tag, package version, or book revision.
+				</div></li><li class="step"><div class="formalpara"><h5 class="formalpara" id="id710468">Optionally:</h5>
+						Specify a customised list of target languages that overrides the project setting. This is used to restrict the target languages to a specific subset.
+					</div></li><li class="step"><div class="para">
+					Click "Save"
+				</div></li></ol></div></div><div class="chapter" id="id897828"><div class="titlepage"><div><div><h2 class="title">Chapter 5. Translate a Publican project in Zanata</h2></div></div></div><div class="toc"><dl><dt><span class="section"><a href="#id897845">5.1. Publican project integration</a></span></dt><dt><span class="section"><a href="#id625505">5.2. Push source strings and existing translations</a></span></dt></dl></div><div class="para">
+			<a href="https://fedorahosted.org/publican/">Publican</a> is a popular open source Docbook publishing tool chain. It is used for writing documentation. Zanata and Publican - two great flavours that taste great together.
+		</div><div class="section"><div class="titlepage"><div><div><h2 class="title" id="id897845">5.1. Publican project integration</h2></div></div></div><div class="para">
+				Follow this procedure to integrate a Publican book with a Zanata instance for translation.
+			</div><div class="procedure" id="redhat_configure_project"><h6>Procedure 5.1. Configure your Publican project for translation in Zanata</h6><ol class="1"><li class="step"><div class="para">
+						Complete the prerequisites in <a class="xref" href="#chap_redhat_prereqs">Chapter 2, <em>Prerequisites for using a Zanata instance</em></a> and <a class="xref" href="#chap_redhat_create_project">Chapter 4, <em>Configure a Zanata translation project</em></a>.
+					</div></li><li class="step"><div class="para">
+						Log in to the Zanata instance.
+					</div></li><li class="step"><div class="para">
+						Click "Projects"
+					</div></li><li class="step"><div class="para">
+						Locate your translation project, and click it
+					</div></li><li class="step"><div class="para">
+						On your project's page, click "Configure file" to download the <code class="filename">zanata.xml</code> file
+					</div></li><li class="step"><div class="para">
+						Copy the <code class="filename">zanata.xml</code> file to the directory containing your book's <code class="filename">publican.cfg</code> file
+					</div></li></ol></div><div class="procedure" id="redhat_create_pot_files"><h6>Procedure 5.2. Create publican translation files for Zanata</h6><ul><li class="step"><div class="para">
+						In the directory containing publican.cfg, run the command:
+					</div><pre class="screen"><code class="command">publican update_pot</code></pre></li></ul></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" id="id625505">5.2. Push source strings and existing translations</h2></div></div></div><div class="procedure" id="redhat_push_to_zanata"><h6>Procedure 5.3. Push Publican .pot files to Zanata for translation</h6><ul><li class="step"><div class="para">
+						In the directory containing <code class="filename">zanata.xml</code>, run the command:
+					</div><div class="formalpara"><h5 class="formalpara" id="id639815">For zanata-python-client 1.2.4:</h5>
+							
+<pre class="screen"><code class="command">zanata publican push</code></pre>
+						</div><div class="formalpara"><h5 class="formalpara" id="id639832">For zanata-python-client 1.2.6+:</h5>
+							
+<pre class="screen"><code class="command">zanata push</code></pre>
+						</div><div class="formalpara"><h5 class="formalpara" id="id779616">Result:</h5>
+							The strings are pushed to the Zanata instance and are available for translation.
+						</div></li></ul></div></div></div><div class="chapter" id="id779633"><div class="titlepage"><div><div><h2 class="title">Chapter 6. Translate a software package in Zanata</h2></div></div></div><div class="toc"><dl><dt><span class="section"><a href="#id779652">6.1. Software project integration</a></span></dt><dt><span class="section"><a href="#id439919">6.2. Push source strings and existing translations</a></span></dt></dl></div><div class="para">
+			Zanata can translate any software package that provides its source strings in GNU Gettext format as a <code class="filename">.pot</code> file, and can consume translated <code class="filename">.po</code> files.
+		</div><div class="section"><div class="titlepage"><div><div><h2 class="title" id="id779652">6.1. Software project integration</h2></div></div></div><div class="procedure" id="redhat_configure_project_1"><h6>Procedure 6.1. Configure your software project for translation in Zanata</h6><ol class="1"><li class="step"><div class="para">
+						Complete the prerequisites in <a class="xref" href="#chap_redhat_prereqs">Chapter 2, <em>Prerequisites for using a Zanata instance</em></a>, <a class="xref" href="#chap_request_project">Chapter 3, <em>Request a Zanata translation project</em></a>, and <a class="xref" href="#chap_redhat_create_project">Chapter 4, <em>Configure a Zanata translation project</em></a>.
+					</div></li><li class="step"><div class="para">
+						Log in to Zanata.
+					</div></li><li class="step"><div class="para">
+						Click "Projects"
+					</div></li><li class="step"><div class="para">
+						Locate your translation project, and click it
+					</div></li><li class="step"><div class="para">
+						On your project's page, click "Configure file" to download the <code class="filename">zanata.xml</code> file
+					</div></li><li class="step"><div class="para">
+						Copy the <code class="filename">zanata.xml</code> file to the directory that contains your project's <code class="filename">.pot</code> file
+					</div></li><li class="step"><div class="para">
+						Add the <code class="filename">zanata.xml</code> file to the project's source control.
+					</div></li></ol></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" id="id439919">6.2. Push source strings and existing translations</h2></div></div></div><div class="para">
+				You can use Zanata to obtain translations for any software project that provides its source strings in GNU Gettext <code class="filename">.pot</code> file format and can consume translated <code class="filename">.po</code> files.
+			</div><div class="procedure"><h6>Procedure 6.2. Push software project .pot file(s) to Zanata for translation</h6><div class="para">
+					Follow this procedure to push a project's source strings to Zanata for translation. If you have existing translations you wish to push to the server along with source strings, refer to <a class="xref" href="#push_with_translations">Procedure 6.3, “Push software project .pot file(s) and existing translations”</a>.
+				</div><ul><li class="step"><div class="para">
+						In the directory containing <code class="filename">zanata.xml</code>, run the command:
+					</div><div class="formalpara"><h5 class="formalpara" id="id439965">For zanata-python-client 1.2.4:</h5>
+							
+<pre class="screen"><code class="command">zanata po push --srcdir .</code></pre>
+						</div><div class="formalpara"><h5 class="formalpara" id="id591571">For zanata-python-client 1.2.6+:</h5>
+							
+<pre class="screen"><code class="command">zanata push</code></pre>
+						</div><div class="formalpara"><h5 class="formalpara" id="id591588">Result:</h5>
+							All <code class="filename">.pot</code> files in the <code class="filename">srcdir</code> are pushed to the Zanata server and are available for translation.
+						</div></li></ul></div><div class="note"><div class="admonition_header"><h2>Source string merging</h2></div><div class="admonition"><div class="para">
+					If you push a newer version of source strings to an ongoing Zanata translation project with translation already underway, the server will merge any existing translations for that project to preserve translation work so far. Any source language strings that had translations on the server before the push will have them after the push.
+				</div></div></div><div class="procedure"><h6>Procedure 6.3. Push software project .pot file(s) and existing translations</h6><div class="para">
+					Use this procedure to push a project's strings to Zanata along with existing translations.
+				</div><ul><li class="step"><div class="para">
+						In the directory containing <code class="filename">zanata.xml,</code>
+					</div><div class="formalpara"><h5 class="formalpara" id="id520660">For zanata-python-client 1.2.4:</h5>
+							
+<pre class="screen"><code class="command">zanata po push --srcdir . --import-po --transdir ./po</code></pre>
+							 run the command:
+						</div><div class="formalpara"><h5 class="formalpara" id="id851920">For zanata-python-client 1.2.6+:</h5>
+							
+<pre class="screen"><code class="command">zanata push --push-trans --transdir ./po</code></pre>
+							 run the command:
+						</div><div class="para">
+						Substitute the location of your existing <code class="filename">.po</code> files as the value for <code class="command">--transdir</code>. Optionally, specify a merging schema if you are pushing <code class="filename">.po</code> file translations into an ongoing Zanata translation project with existing server-side translations. See <a class="xref" href="#note_on_target_merging">Target string merging</a>.
+					</div><div class="formalpara"><h5 class="formalpara" id="id480648">Result:</h5>
+							All <code class="filename">.pot</code> files in the <code class="filename">srcdir</code> are pushed to the Zanata server, along with all existing translations in <code class="filename">.po</code> files in the <code class="filename">transdir</code>.
+						</div></li></ul></div><div class="note" id="note_on_target_merging"><div class="admonition_header"><h2>Target string merging</h2></div><div class="admonition"><div class="para">
+					If you push <code class="filename">.po</code> translations to an ongoing translation project that has translations on the server, you have two different merging schemas.
+				</div><div class="formalpara"><h5 class="formalpara" id="id453850"> Merge Auto schema</h5>
+						The Merge Auto is the default schema, and is used when no schema is specified, or when the <code class="command">--merge auto</code> command switch is specified. The Merge Auto schema will add all new translations from the <code class="filename">.po</code> file (translations added to the <code class="filename">.po</code> file since the last import). So, if translations have been done offline in <code class="filename">.po</code> files, you can contribute these translations to your Zanata translation project. Where a string has been updated on the server, but remains unchanged in the <code class="filename">.po</code> file since the last import, the server-side translation is preserved. When a translation has been updated in both the <code class="filename">.po</code> file and the server since the last import, the <code class="filename">.po</code> file translation will overwrite the server-side translation.
+					</div><div class="formalpara"><h5 class="formalpara" id="id453891">Merge Import schema</h5>
+						The merge import schema is used when the <code class="command">--merge import</code> command switch is supplied. The Merge Import schema will overwrite all server-side translations with the <code class="filename">.po</code> files contents. Where a server-side translation exists and no translation exists in the <code class="filename">.po</code> file, the server-side translation is lost.
+					</div></div></div></div></div><div class="chapter" id="id605162"><div class="titlepage"><div><div><h2 class="title">Chapter 7. View translation project status in Zanata</h2></div></div></div><div class="procedure"><h6>Procedure 7.1. Viewing translation status</h6><ol class="1"><li class="step"><div class="para">
+					Log in to the Zanata instance.
+				</div></li><li class="step"><div class="para">
+					Click Projects
+				</div></li><li class="step"><div class="para">
+					Locate your translation project, and click it
+				</div></li><li class="step"><div class="para">
+					On your project's page, click "View Status" next to the project version you want to check.
+				</div><div class="formalpara"><h5 class="formalpara" id="id558206">Result:</h5>
+						You are taking to the statistics page for that version of your project. Here you can see how many words have been uploaded, and view the percentage completion for each of the target languages.
+					</div></li></ol></div></div><div class="chapter" id="id558223"><div class="titlepage"><div><div><h2 class="title">Chapter 8. Pull translations from Zanata</h2></div></div></div><div class="toc"><dl><dt><span class="section"><a href="#id680086">8.1. Pull translations for a Publican project </a></span></dt><dt><span class="section"><a href="#id685539">8.2. Pull translations for a software project</a></span></dt></dl></div><div class="para">
+			You can pull translations from the Zanata server at any stage of translation completion above 0%.
+		</div><div class="para">
+			The Zanata client makes the translations available on the local file system as GNU Gettext <code class="filename">.po</code> files. You may opt to keep these files in the source control system you use for your for your project source, or you may use them as transient files only by adding the pull as a step in your build process.
+		</div><div class="section"><div class="titlepage"><div><div><h2 class="title" id="id680086">8.1. Pull translations for a Publican project </h2></div></div></div><div class="procedure"><h6>Procedure 8.1. Pull translations for a Publican project</h6><ul><li class="step"><div class="para">
+						In the directory of your Publican project that contains the <code class="filename">publican.cfg</code> and <code class="filename">zanata.xml </code>files, run the following command:
+					</div><div class="formalpara"><h5 class="formalpara" id="id680113">For zanata-python-client 1.2.4:</h5>
+							
+<pre class="screen"><code class="command">zanata publican pull</code></pre>
+						</div><div class="formalpara"><h5 class="formalpara" id="id685498">For zanata-python-client 1.2.6+:</h5>
+							
+<pre class="screen"><code class="command">zanata pull</code></pre>
+						</div><div class="formalpara"><h5 class="formalpara" id="id685515">Result:</h5>
+							Translations above 0% are pulled from the Zanata and written as <code class="filename">.po</code> files in the Publican project.
+						</div><div class="para">
+					</div></li></ul></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" id="id685539">8.2. Pull translations for a software project</h2></div></div></div><div class="procedure"><h6>Procedure 8.2. Pull translations for a software project</h6><ul><li class="step"><div class="para">
+						In the directory containing <code class="filename">zanata.xml</code>, run the following command:
+					</div><div class="formalpara"><h5 class="formalpara" id="id656794">For zanata-python-client 1.2.4:</h5>
+							
+<pre class="screen"><code class="command">zanata po pull --dstdir ./po</code></pre>
+						</div><div class="para">
+						Substitute the directory where you would like the .<code class="filename">po</code> files to be written as the value for <code class="filename">dstdir</code>.
+					</div><div class="formalpara"><h5 class="formalpara" id="id656823">For zanata-python-client 1.2.6+:</h5>
+							
+<pre class="screen"><code class="command">zanata pull --transdir ./po</code></pre>
+						</div><div class="para">
+						Substitute the directory where you would like the .<code class="filename">po</code> files to be written as the value for <code class="filename">transdir</code>.
+					</div></li></ul></div></div></div></div><div xml:lang="en-US" class="part" id="id667656" lang="en-US"><div class="titlepage"><div><div><h1 class="title">Part II. Translator Quickstart</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl><dt><span class="chapter"><a href="#id720663">9. Contributing translations</a></span></dt><dd><dl><dt><span class="section"><a href="#id793885">9.1. Pre-requisites</a></span></dt><dt><span class="section"><a href="#id775306">9.2. Join a language team</a></span></dt></dl></dd></dl></div><div class="chapter" id="id720663"><div class="titlepage"><div><div><h2 class="title">Chapter 9. Contributing translations</h2></div></div></div><div class="toc"><dl><dt><span class="section"><a href="#id793885">9.1. Pre-requisites</a></span></dt><dt><span class="section"><a href="#id775306">9.2. Join a language team</a></span></dt></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" id="id793885">9.1. Pre-requisites</h2></div></div></div><div class="para">
+				All you need to contribute translation to Zanata are:
+			</div><div class="orderedlist"><ol><li class="listitem"><div class="para">
+						A web browser
+					</div></li><li class="listitem"><div class="para">
+						A validated Fedora Account System (FAS) account
+					</div></li><li class="listitem"><div class="para">
+						A second language
+					</div></li></ol></div><div class="para">
+				Most modern web browsers support the Zanata online translation editor functionality.
+			</div><div class="para">
+				To obtain and validate a FAS account refer to <a class="xref" href="#fedora_create_FAS_account">Procedure 2.1, “Create a Fedora Account System (FAS) account”</a> and <a class="xref" href="#fedora_validate_account">Procedure 2.2, “Validate your Fedora Zanata account ”</a>.
+			</div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" id="id775306">9.2. Join a language team</h2></div></div></div><div class="para">
+				A Language Team groups translators together through a common language. Language Teams can work simultaneously on translating a single document into their respective languages. All translations and all revisions are kept with each respective Language Team without affecting any other Team.
+			</div><div class="para">
+				To get into the action you need to join a Language Team. Zanata will only show you the translation projects that correspond to your Language Teams. No Language Team, no visible projects.
+			</div><div class="procedure"><h6>Procedure 9.1. Join a Language Team</h6><ol class="1"><li class="step"><div class="para">
+						Sign in to Zanata
+					</div></li><li class="step"><div class="para">
+						Click the "Language" tab
+					</div></li><li class="step"><div class="para">
+						Click the Language Team you want to join
+					</div></li><li class="step"><div class="para">
+						Click "Join Language Team"
+					</div><div class="formalpara"><h5 class="formalpara" id="id839229">Result:</h5>
+							You join that Language Team, and the Language Team is added to "My Languages" under the "My Profile" tab.
+						</div></li></ol></div><div class="procedure"><h6>Procedure 9.2. Leave a Language Team</h6><ol class="1"><li class="step"><div class="para">
+						Sign in to Zanata
+					</div></li><li class="step"><div class="para">
+						Click "Language" or "My Profile"
+					</div></li><li class="step"><div class="para">
+						Click the Language Team you want to leave
+					</div></li><li class="step"><div class="para">
+						Click "Leave Language Team"
+					</div><div class="formalpara"><h5 class="formalpara" id="id685991">Result:</h5>
+							You are removed from that Language Team.
+						</div></li></ol></div></div></div></div><div xml:lang="en-US" class="appendix" id="appe-Zanata_User_Guide-Revision_History" lang="en-US"><div class="titlepage"><div><div><h1 class="title">Revision History</h1></div></div></div><div class="para">
+		<div class="revhistory"><table border="0" width="100%" summary="Revision history"><tr><th align="left" valign="top" colspan="3"><strong>Revision History</strong></th></tr><tr><td align="left">Revision 0-2</td><td align="left">Wed Aug 10 2011</td><td align="left"><span class="author"><span class="firstname">Joshua</span> <span class="surname">Wulf</span></span></td></tr><tr><td align="left" colspan="3">
+					<table border="0" summary="Simple list" class="simplelist"><tr><td>Added zanata-python-client 1.2.6 info and Translator Quickstart</td></tr></table>
+
+				</td></tr></table></div>
+		 <div class="revhistory"><table border="0" width="100%" summary="Revision history"><tr><th align="left" valign="top" colspan="3"><strong>Revision History</strong></th></tr><tr><td align="left">Revision 0-1</td><td align="left">Wed Aug 10 2011</td><td align="left"><span class="author"><span class="firstname">Joshua</span> <span class="surname">Wulf</span></span></td></tr><tr><td align="left" colspan="3">
+					<table border="0" summary="Simple list" class="simplelist"><tr><td>First publish to web</td></tr></table>
+
+				</td></tr></table></div>
+		 <div class="revhistory"><table border="0" width="100%" summary="Revision history"><tr><th align="left" valign="top" colspan="3"><strong>Revision History</strong></th></tr><tr><td align="left">Revision 0-0</td><td align="left">Tue Jul 5 2011</td><td align="left"><span class="author"><span class="firstname">Joshua</span> <span class="surname">Wulf</span></span></td></tr><tr><td align="left" colspan="3">
+					<table border="0" summary="Simple list" class="simplelist"><tr><td>Initial creation of book by publican</td></tr></table>
+
+				</td></tr></table></div>
+
+	</div></div><div class="index" id="id737602"><div class="titlepage"><div><div><h2 class="title">Index</h2></div></div></div><div class="index"><div class="indexdiv"><h3>F</h3><dl><dt>feedback</dt><dd><dl><dt>contact information for this manual, <a class="indexterm" href="#id751767">We Need Feedback!</a></dt></dl></dd></dl></div></div></div></div></body></html>
