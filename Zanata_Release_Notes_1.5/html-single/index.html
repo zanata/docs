@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Zanata 1.5 Release Notes</title><link rel="stylesheet" type="text/css" href="Common_Content/css/default.css" /><link rel="stylesheet" media="print" href="Common_Content/css/print.css" type="text/css" /><meta name="generator" content="publican 2.8" /><meta name="package" content="Zanata-Release_Notes-1.5-en-US-0-0" /></head><body><p id="title"><a class="left" href="https://fedorahosted.org/publican"><img src="Common_Content/images/image_left.png" alt="Product Site" /></a><a class="right" href="https://fedorahosted.org/publican"><img src="Common_Content/images/image_right.png" alt="Documentation Site" /></a></p><div xml:lang="en-US" class="article" id="id2916809" lang="en-US"><div class="titlepage"><div><div><h1 id="id2916809" class="title">Zanata 1.5 Release Notes</h1></div></div><hr /></div><div class="section"><div class="titlepage"><div><div><h2 class="title" id="id3148688">1. Zanata</h2></div></div></div><div class="para">
+			Zanata is a web-based translation management system. Zanata provides an interface that allows a community of translators to work side-by-side on translation projects with nothing more than an Internet connection and a web-browser. Zanata provides APIs and client-side tools that allow software developers and documentation authors to push content to the server for translation and pull completed translations back for their project.
+		</div><div class="para">
+			Zanata is an open source project sponsored by Red Hat. The project website is found at <a href="http://www.zanata.org">http://www.zanata.org</a>. A hosted instance of Zanata that can be freely used to host and translate projects is found at <a href="ttp://translate.zanata.org">ttp://translate.zanata.org</a>.
+		</div><div class="formalpara"><h5 class="formalpara" id="id3148750">Zanata 1.5</h5>
+				Zanata 1.5 is a significant release that includes a large number of new features and bug fixes.
+			</div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" id="id3148764">2. Format of these Release Notes</h2></div></div></div><div class="para">
+			These release notes cover Zanata 1.5, and record:
+		</div><div class="itemizedlist"><ul><li class="listitem"><div class="para">
+					New Features added in the release
+				</div></li><li class="listitem"><div class="para">
+					Bugs that were resolved with the release
+				</div></li><li class="listitem"><div class="para">
+					Known Issues with this release
+				</div></li></ul></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" id="id2907176">3. New Features in 1.5</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2907182">3.1. Feature: Action level security checks implemented </h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2907190">Background:</h5>
+					Prior to Zanata 1.5, users were shown actions that they did not have authorization to perform. Attempting to perform one of these operations without sufficient privileges would result in an error message.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2907205">New feature:</h5>
+					Action level security checks have been implemented. Actions for which the user does not have sufficient permissions are no longer displayed.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2907219">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=749437">https://bugzilla.redhat.com/show_bug.cgi?id=749437</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2907238">3.2. Feature: Add/remove coordinators from language team </h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2907246">Background:</h5>
+					Prior to Zanata 1.5, only an admin user could make a user a coordinator of a language team. A language coordinator could add users to the language team, but could not give them the language coordinator role.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2907261">New feature:</h5>
+					Users with the language coordinator role now have the ability to grant the language coordinator role to users, in addition to the ability to add users to the language team.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2907276">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=743181">https://bugzilla.redhat.com/show_bug.cgi?id=743181</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id3487306">3.3. Feature: Bookmark a specific document </h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id3487312">Background:</h5>
+					Prior to Zanata 1.5, it was possible to bookmark a workspace, but not a specific document.
+				</div><div class="formalpara"><h5 class="formalpara" id="id3487326">New feature:</h5>
+					Documents are now presented in a way that allows a specific document to be bookmarked using a web browser bookmark.
+				</div><div class="formalpara"><h5 class="formalpara" id="id3487340">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=757621">https://bugzilla.redhat.com/show_bug.cgi?id=757621</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id3487359">3.4. Feature: Bookmark multiple documents</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id3487366">Background:</h5>
+					It is useful for translators to bookmark an arbitrary group of documents.
+				</div><div class="formalpara"><h5 class="formalpara" id="id3487379">New feature:</h5>
+					Multiple arbitrary documents can now be bookmarked using a custom url.
+				</div><div class="formalpara"><h5 class="formalpara" id="id3487393">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=758587#c2">https://bugzilla.redhat.com/show_bug.cgi?id=758587#c2</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id3487413">3.5. Feature: Disable Translation Memory and validation in read-only editor</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id3487420">Background:</h5>
+					The translation editor can be displayed in read-only mode. When this is the case, no edits can be made to translations.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2903437">New feature:</h5>
+					The Translation Memory feature is now disabled when the translation editor is opened in read-only mode.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2903451">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=789201">https://bugzilla.redhat.com/show_bug.cgi?id=789201</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2903470">3.6. Feature: Email to administrators now includes server URL</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2903477">Background:</h5>
+					Administrators receive email notifications from Zanata servers. In cases where an administrator is responsible for more than Zanata server they receive email from multiple servers. Prior to Zanata 1.5 it was not explicitly clear which server had sent each email notification.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2903494">New feature:</h5>
+					Server notification emails to administrators now include the URL of the server, to enable administrators to unambiguously determine which server the notification comes from.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2903509">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=751969">https://bugzilla.redhat.com/show_bug.cgi?id=751969</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2903529">3.7. Feature: Highlight differences compared to Translation Memory matches </h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2903536">Background:</h5>
+					Translation memory suggestions sometimes include a partial match. In these cases it is useful to be able to quickly assess which part of the translation memory suggestion is a complete match.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2903552">New feature:</h5>
+					Zanata 1.5 uses color to highlight the part of the translation memory suggestion that is a complete match.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2903566">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=756264">https://bugzilla.redhat.com/show_bug.cgi?id=756264</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2882402">3.8. Feature: Improved translation memory similarity algorithm</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2882409">Background:</h5>
+					Prior to Zanata 1.5, translation memory suggestions that were not a 100% match were sometimes assigned a 100% match.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2882423">New feature:</h5>
+					Zanata 1.5 uses standard Levenshtein distance instead of substring distance to calculate the translation match. This algorithm does not return a 100% match in cases of a partial match.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2882439">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=730189">https://bugzilla.redhat.com/show_bug.cgi?id=730189</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2882458">3.9. Feature: Increase the padding to the top and bottom of the Translation Unit cells </h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2882466">Background:</h5>
+					Source material for translation is presented in Zanata as translation units. Translation units are formatted in the Translation Editor in translation unit cells.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2882481">New feature:</h5>
+					The padding of translation unit cells has been increased in Zanata 1.5 to improve clarity.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2882495">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=755735">https://bugzilla.redhat.com/show_bug.cgi?id=755735</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2882515">3.10. Feature: Login to a particular project</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2882522">Background:</h5>
+					Contributing translations requires a validated account on the Zanata server. Viewing a list of projects is possible without logging in. Prior to Zanata 1.5, when a user logs in to the Zanata server while viewing a project, they are taken to the Zanata server homepage.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2882538">New feature:</h5>
+					Logging in to a Zanata 1.5 server from a project page takes the user back to the project page after logging in.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2882552">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=759001">https://bugzilla.redhat.com/show_bug.cgi?id=759001</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2882572">3.11. Feature: Mark a project as obsolete</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2882579">Background:</h5>
+					Translation projects cannot be deleted from a Zanata server. However, sometimes a project is no longer required, and the project maintainer may wish to make this explicit to translators.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2882594">New feature:</h5>
+					Projects can now be marked as obsolete, which will remove them from the list of projects presented to translators.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2882608">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=750673">https://bugzilla.redhat.com/show_bug.cgi?id=750673</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2882628">3.12. Feature: Maven client can generate skeletons for empty files </h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2882636">Background:</h5>
+					Prior to Zanata 1.5, when pulling translations the Zanata maven plugin would not create po files for files that were untranslated on the server.
+				</div><div class="formalpara"><h5 class="formalpara" id="id3147809">New feature:</h5>
+					The maven plugin now supports an option to create po files for untranslated files when pulling translations from the server.
+				</div><div class="formalpara"><h5 class="formalpara" id="id3147823">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=754870">https://bugzilla.redhat.com/show_bug.cgi?id=754870</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id3147842">3.13. Feature: Maven projects with multiple modules share Zanata configuration</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id3147850">Background:</h5>
+					A maven project may have multiple modules. Prior to Zanata 1.4.5, each Maven module in a software project required its own <code class="filename">zanata.xml</code> configuration file and its own translation project on the Zanata server.
+				</div><div class="formalpara"><h5 class="formalpara" id="id3147869">New feature:</h5>
+					Maven modules can now inherit <code class="literal">zanata-maven-plugin</code> configuration from the parent <code class="filename">pom.xml</code>, and push the translatable content of all modules of a software project to a single translation project on the Zanata server. When pushing to the server, the module ID is prepended to the document name to avoid potential naming conflict.
+				</div><div class="para">
+				To utilise this feature, invoke maven with the option <code class="command">-Dzanata.enableModules</code>.
+			</div><div class="para">
+				To test this feature without performing a commit, add the option <code class="command">-DdryRun.</code>
+			</div><div class="para">
+				Obsolete modules are not deleted by default. To remove the content of an obsoleted module from the translation project, use the option <code class="command">-Dzanata.deleteObsoleteModules</code>
+			</div><div class="formalpara"><h5 class="formalpara" id="id3147921">More information</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=742872">https://bugzilla.redhat.com/show_bug.cgi?id=742872</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id3147941">3.14. Feature: Messages in the editor filtered by translation status </h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id3147948">Background:</h5>
+					Translators typically interact with translation units in the same state as a group, for example wishing to see only untranslated and fuzzy entries, without the visual distraction of translated units.
+				</div><div class="formalpara"><h5 class="formalpara" id="id3147964">New feature:</h5>
+					The Zanata 1.5 translator editor
+				</div><div class="formalpara"><h5 class="formalpara" id="id3147976">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=773459">https://bugzilla.redhat.com/show_bug.cgi?id=773459</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id3147996">3.15. Feature: Newline validation on leading and trailing string</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id3148004">Background:</h5>
+					Newlines in translation units do not require to be translated, but they should be preserved to preserve the formatting of the text.
+				</div><div class="formalpara"><h5 class="formalpara" id="id3148018">New feature:</h5>
+					The Zanata 1.5 Translation Editor presents a validation error message when newlines in the translated unit do not match those in the source unit.
+				</div><div class="formalpara"><h5 class="formalpara" id="id3148033">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=768802">https://bugzilla.redhat.com/show_bug.cgi?id=768802</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id3148053">3.16. Feature: Omit NON-TRANSLATABLE strings when pushing .properties files </h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id3148060">Background:</h5>
+					Properties files can contain strings, such as application names or commands, that should not be translated.
+				</div><div class="formalpara"><h5 class="formalpara" id="id3148074">New feature:</h5>
+					Zanata 1.5 supports marking up strings in properties files as non-translatable.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2917085">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=788857">https://bugzilla.redhat.com/show_bug.cgi?id=788857</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2917105">3.17. Feature: Performance improvements when pushing a new project that reuses translations </h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2917113">Background:</h5>
+					When a new project version is pushed to the Zanata server the translations from previous versions are scanned for reusable translations.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2917127">New feature:</h5>
+					The copytrans service, which performs the translation reuse scanning, has been refactored in Zanata 1.5 to optimize its performance. This refactoring has resulted in up to 30% decrease in time taken to scan for reusable translations.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2917143">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=749439">https://bugzilla.redhat.com/show_bug.cgi?id=749439</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2917163">3.18. Feature: PO file download from the web interface</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2917170">Background:</h5>
+					PO files can be downloaded from the Zanata server using a Zanata client such as the python client or maven plugin.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2917184">New feature:</h5>
+					Zanata 1.5 allows translators to download PO files from the web interface.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2917198">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=749439">https://bugzilla.redhat.com/show_bug.cgi?id=749439</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2917218">3.19. Feature: Readonly access to retired project/project iteration </h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2917225">Background:</h5>
+					With Zanata 1.5 project maintainers can render a project invisible using the "obsolete" project setting. Sometimes a project maintainer may wish to retain the visibility of a project, but still prevent new translations from being made.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2917241">New feature:</h5>
+					Zanata 1.5 adds a READONLY status for translation projects.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2917254">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=755759">https://bugzilla.redhat.com/show_bug.cgi?id=755759</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2917274">3.20. Feature: Shortcut keys for Translation Memory suggestions</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2917282">Background:</h5>
+					Zanata presents Translation Memory suggestions in the Translation Editor. Translators frequently use the keyboard as an exclusive input device to maintain workflow.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2917296">New feature:</h5>
+					The Zanata 1.5 Translation Editor allows translators to accept a Translation Memory suggestion using <code class="literal">Ctrl + Shift + 1, 2, 3, 4</code>.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2917314">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=772501">https://bugzilla.redhat.com/show_bug.cgi?id=772501</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2917334">3.21. Feature: Sortable language list </h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2917341">Background:</h5>
+					Language groups are presented on the Zanata server with the language code, the English language name, the native language name, and the number of members in the language group.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2951612">New feature:</h5>
+					The list of language groups is now sortable by language code, English language name, or number of members.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2951626">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=726588#c5">https://bugzilla.redhat.com/show_bug.cgi?id=726588#c5</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2951645">3.22. Feature: Support for msgctxt in PO files </h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2951652">Background:</h5>
+					Message context entries in a po file capture message context, and disambiguate different instances of the same untranslated string. Prior to Zanata 1.5 msgctxt entries were stripped from po files returned from the server.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2951668">New feature:</h5>
+					Zanata 1.5 now returns po files with msgctxt entries preserved.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2951681">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=739807">https://bugzilla.redhat.com/show_bug.cgi?id=739807</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2951701">3.23. Feature: Variables checked for consistency</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2951708">Background:</h5>
+					Translatable strings can include variables such as <code class="literal">%d</code> and <code class="literal">%f</code>. These variables should not be translated, but must be included in the appropriate place in the translated string. If they are removed by a translator, then the translated message will not perform as expected when integrated into an application, and may cause an error or missing information.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2951734">New feature:</h5>
+					When variables in a source unit are removed in the translated unit, the Zanata 1.5 Translation Editor presents a Validation Error message to the translator.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2951748">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=769471">https://bugzilla.redhat.com/show_bug.cgi?id=769471</a>.
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2951768">3.24. Feature: XML and HTML tag checked for completeness </h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2951776">Background:</h5>
+					Translatable strings may include XML or HTML markup. These markup tags are not translatable, but they must remain in the appropriate place in the translated string or the translation may not compile or render properly.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2951791">New feature:</h5>
+					The Zanata 1.5 Translation Editor presents translators with a Validation Error message when an XML or HTML tag is broken in a translated unit.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2951806">More information:</h5>
+					For more information refer to <a href="https://bugzilla.redhat.com/show_bug.cgi?id=756235">https://bugzilla.redhat.com/show_bug.cgi?id=756235</a>.
+				</div></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" id="id2951827">4. Resolved Issues in 1.5</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2951834">4.1. Bugfix: Clicks on column headers of document list cause editor to be opened</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2951841">Cause:</h5>
+					The column headers of the document list responded to clicks with the same code as the column contents.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2951855">Consequence:</h5>
+					Clicking on the column header would resort the document list, but would also open the translation editor.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2951869">Fix:</h5>
+					The event handler for the column headers has been rewritten.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2951882">Result:</h5>
+					Clicking a column heading in the document list now sorts the document list and does not open the translation editor.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2951896">More information:</h5>
+					For more information refer to the original bug report at <a href="https://bugzilla.redhat.com/show_bug.cgi?id=732941">https://bugzilla.redhat.com/show_bug.cgi?id=732941</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2951916">4.2. Bugfix: Empty flag lines in po files</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2951927">Consequence:</h5>
+					Spurious empty flag lines were inserted into po files.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2951944">Result:</h5>
+					Empty flag lines are no longer added to po files.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2951957">More information:</h5>
+					For more information refer to the original bug report at <a href="https://bugzilla.redhat.com/show_bug.cgi?id=710322">https://bugzilla.redhat.com/show_bug.cgi?id=710322</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2951977">4.3. Bugfix: Error in console when first access from a browser occurs after fresh installation</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2951985">Cause:</h5>
+					A bug in JBoss Seam caused a race condition in initialization of Seam components, leading to two instances of the same component being created.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2952000">Consequence:</h5>
+					The Zanata server would throw an error on the first browser access immediately after installation.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2952014">Fix:</h5>
+					The "startup=true" parameter was added to <code class="filename">org.jboss.seam.drools.RuleBase</code> to work around the bug.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2952031">Result:</h5>
+					The Zanata server no longer throws an error on first browser access immediately after installation.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2952045">More information:</h5>
+					For more information refer to the original bug report at <a href="https://bugzilla.redhat.com/show_bug.cgi?id=692785">https://bugzilla.redhat.com/show_bug.cgi?id=692785</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2952065">4.4. Bugfix: J' and 'K' navigation keys trigger when entering text in the TM search box</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2952073">Cause:</h5>
+					Key events from the full-text search box in the translation editor are captured by the document loaded into the editor. The keys <code class="literal">J</code> and <code class="literal">K</code> were defined as navigation shortcuts.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2952096">Consequence:</h5>
+					When the letters J or K were entered into a full-text search query, they triggered a navigation event in the translation editor.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2952110">Fix:</h5>
+					The navigation shortcut keys were redefined as <code class="literal"> Alt + J</code> and <code class="literal">Alt + K</code>
+				</div><div class="formalpara"><h5 class="formalpara" id="id2952131">Result:</h5>
+					Pressing the <code class="literal">J</code> and <code class="literal">K</code> keys no longer triggers a navigation event in the translation editor.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2952152">More information:</h5>
+					For more information refer to the original bug report at <a href="https://bugzilla.redhat.com/show_bug.cgi?id=754637">https://bugzilla.redhat.com/show_bug.cgi?id=754637</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2952172">4.5. Bugfix: Leading space missing when copying text from Zanata source column in Firefox 3</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2952180">Cause:</h5>
+					A bug in Firefox 3 removes leading spaces when copying and pasting text.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2952193">Consequence:</h5>
+					Copying a source string to the translated cell removed any leading space.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2952207">Fix:</h5>
+					A &lt;pre&gt; element was added to the source string, to enforce preservation of leading spaces.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2952222">Result:</h5>
+					Copying a source string to the translated cell in Firefox 3 now preserves leading spaces.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2952236">More information:</h5>
+					For more information refer to the original bug report at <a href="https://bugzilla.redhat.com/show_bug.cgi?id=756239">https://bugzilla.redhat.com/show_bug.cgi?id=756239</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2933295">4.6. Bugfix: Long strings slow down the operation of the translation editor</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2933303">Cause:</h5>
+					Dynamic resizing of the translation cell was implemented as a loop.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933316">Consequence:</h5>
+					Long strings in the translation cell caused the translation editor to become unresponsive as the resizing loop executed.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933330">Fix:</h5>
+					The dynamic resizing code for the translation editor was rewritten to remove the loop.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933343">Result:</h5>
+					Long strings do not cause the translation editor to become unresponsive.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933357">More information:</h5>
+					For more information refer to the original bug report at <a href="https://bugzilla.redhat.com/show_bug.cgi?id=750956">https://bugzilla.redhat.com/show_bug.cgi?id=750956</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2933376">4.7. Bugfix: Long word in source cell invades the editor cell</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2933383">Cause:</h5>
+					Translation cells in the translation editor did not have a scroll bar.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933397">Consequence:</h5>
+					When a line in the source strings could not be wrapped it extended outside the translation cell and into the adjacent one.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933411">Fix:</h5>
+					A horizontal scroll bar was added to the translation cell.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933424">Result:</h5>
+					Long source strings that do not wrap are now presented with a scroll bar, and do not extend into the adjacent translation cell.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933438">More information:</h5>
+					For more information refer to the original bug report at <a href="https://bugzilla.redhat.com/show_bug.cgi?id=759337#c4">https://bugzilla.redhat.com/show_bug.cgi?id=759337#c4</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2933458">4.8. Bugfix: Misleading “duplicate email” error displayed</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2933467">Cause:</h5>
+					Annotation based validation was used for the user profile page.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933480">Consequence:</h5>
+					Pressing "Save" in the user profile page displayed an error "Duplicate email" when the email address had not been changed.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933494">Fix:</h5>
+					Validation on the user profile page was changed from annotation-based to manual.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933508">Result:</h5>
+					Saving the user profile does not generate a "Duplicate email" error when the email address has not been changed.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933521">More information:</h5>
+					For more information refer to the original bug report at <a href=""></a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2933541">4.9. Bugfix: mvn zanata:pull writes ? for Unicode characters (project-type: properties)</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2933549">Cause:</h5>
+					A file writer was implemented without support for UTF-8 encoding.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933562">Consequence:</h5>
+					Unicode characters in properties file were replaced with <code class="literal">?</code> when pulled using the maven plugin.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933580">Fix:</h5>
+					The file writer was rewritten to support UTF-8 encoding.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933593">Result:</h5>
+					Unicode characters in properties files are now correctly encoded.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933606">More information:</h5>
+					For more information refer to the original bug report at <a href="https://bugzilla.redhat.com/show_bug.cgi?id=795597">https://bugzilla.redhat.com/show_bug.cgi?id=795597</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2933626">4.10. Bugfix: "Participants" information is incorrect</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2933633">Cause:</h5>
+					The code that manages closing the translation editor did not correctly communicate its action to the server.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933647">Consequence:</h5>
+					When a participant closed their translation editor, the change of state was not propagated to other participants editing the same document.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933662">Fix:</h5>
+					The code that manages closing the translation editor was corrected to communicate the closure to the server.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933676">Result:</h5>
+					Participant information is now correctly reported and updated when a participant leaves the translation editor.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933690">More information:</h5>
+					For more information refer to the original bug report at <a href="https://bugzilla.redhat.com/show_bug.cgi?id=756292">https://bugzilla.redhat.com/show_bug.cgi?id=756292</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2933710">4.11. Bugfix: Rapid key navigation causes backlog of TM queries</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2933717">Cause:</h5>
+					A Translation Memory search is triggered whenever a user enters a translation cell. When navigating through translation units using keyboard shortcuts, users can trigger multiple translation memory searches in quick succession.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933733">Consequence:</h5>
+					Navigating rapidly through translation units using the keyboard caused the Translation Memory suggestion panel to go out of sync with the translation cells.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933748">Fix:</h5>
+					Translation Memory searches are now triggered by a user entering a translation cell, but only when the last Translation Memory search results have been returned.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933763">Result:</h5>
+					Multiple Translation Memory searches are no longer queued, and the Translation Memory suggestion panel remains in sync.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933777">More information:</h5>
+					For more information refer to the original bug report at <a href="https://bugzilla.redhat.com/show_bug.cgi?id=785034">https://bugzilla.redhat.com/show_bug.cgi?id=785034</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2933797">4.12. Bugfix: Workspace quivers when translation of last message gets too long </h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2933805">Cause:</h5>
+					The translation cell is dynamically resized to accommodate its content as a user types. The function to resize the current translation cell was implemented as a repeating loop.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933820">Consequence:</h5>
+					When the translation cell content reached a certain size, the translation cell resized repeatedly and rapidly.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933834">Fix:</h5>
+					The resizing function has been reimplemented to take the backspace key into account, and to remove the loop.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933848">Result:</h5>
+					The translation cell no longer resizes repeatedly and rapidly.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933861">More information:</h5>
+					For more information refer to the original bug report at <a href="https://bugzilla.redhat.com/show_bug.cgi?id=773510">https://bugzilla.redhat.com/show_bug.cgi?id=773510</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2933881">4.13. Bugfix: Save message steal focus</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2933888">Cause:</h5>
+					The Zanata code assumed a negligible time taken to return a "Save Change to Translation Unit" message from the server to the Translation Editor.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933902">Consequence:</h5>
+					On a slow connection, the time taken for the "Saved change to Translation Unit" message to return from the server was sufficient that the user could begin editing another translation unit before the message displayed. The message then took the focus from the current translation cell, losing any changes there.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933920">Fix:</h5>
+					The code has been rewritten to account for delays in communication between the server and the client, and to take into account the currently focused element in the translation editor.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933935">Result:</h5>
+					On slow connections the "Saved Change to Translation Unit" message no longer steals the focus and reverts unsaved edits.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933949">More information:</h5>
+					For more information refer to the original bug report at <a href="https://bugzilla.redhat.com/show_bug.cgi?id=772528">https://bugzilla.redhat.com/show_bug.cgi?id=772528</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2933969">4.14. Bugfix: Server 500 Error creating user via maven plugin</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2933976">Cause:</h5>
+					The Account class was missing an xml root element declaration, and a null pointer exception was occurring when accessing an empty list on the same class.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2933991">Consequence:</h5>
+					Attempts to create a new user via the maven plugin resulted in a 500 error on the server.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2934005">Fix:</h5>
+					The root xml element was added, and the LanguageTeamMemberships list was populated before the call to read its contents.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2934019">Result:</h5>
+					Users can now be created via the maven plugin.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2934032">More information:</h5>
+					For more information refer to the original bug report at <a href="https://bugzilla.redhat.com/show_bug.cgi?id=746857">https://bugzilla.redhat.com/show_bug.cgi?id=746857</a>
+				</div></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" id="id2934053">5. Known Issues in 1.5</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2934060">5.1. Admin cannot delete users</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2934066">Description:</h5>
+					Admin users cannot delete users from the Zanata server. Attempts to delete a user cause an unexpected error.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2934080">More Information:</h5>
+					<a href="https://bugzilla.redhat.com/show_bug.cgi?id=795274">https://bugzilla.redhat.com/show_bug.cgi?id=795274</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2934100">5.2. Alt+PageUp and Alt+PageDown shortcuts don't work when editor is not focused</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2934108">Description:</h5>
+					In web editor, Alt+PageUp and Alt+PageDown shortcuts to modal navigation only work if the editor is open and has focus.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2939420">More Information:</h5>
+					<a href="https://bugzilla.redhat.com/show_bug.cgi?id=787064">https://bugzilla.redhat.com/show_bug.cgi?id=787064</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2939439">5.3. Maintainers and Admins can add versions to non-active projects</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2939446">Description:</h5>
+					Read-only and obsolete projects should be frozen, with no ability to add new versions. Currently Maintainers and Administrators can add versions to read-only projects though the web interface, and Administrators can add versions to obsolete projects through the web interface.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2939463">More Information:</h5>
+					<a href="https://bugzilla.redhat.com/show_bug.cgi?id=797035">https://bugzilla.redhat.com/show_bug.cgi?id=797035</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2939483">5.4. mvn zanata:publican-push is rejected due to 401 (Unauthorized) when user is not the project maintainer</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2939491">Description:</h5>
+					Only a project maintainer can push strings to a project. When a user other than a project maintainer attempts to push strings to a project using the maven plugin, a 401 error is produced. The wording of the error message does not make it clear that the user must be a project maintainer to successfully push the strings.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2931785">More Information:</h5>
+					<a href="https://bugzilla.redhat.com/show_bug.cgi?id=701854">https://bugzilla.redhat.com/show_bug.cgi?id=701854</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2939159">5.5. Navigation buttons are hidden if user returns to the project file list from the editor and opens a new file</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2894615">Description:</h5>
+					When a user returns from the Translation Editor to the list of files in the project, and opens a file in the editor by clicking on a file from the list, the navigation buttons on the editor are initially hidden. When a translation unit is clicked, the navigation buttons are displayed again.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2900322">More Information:</h5>
+					<a href="https://bugzilla.redhat.com/show_bug.cgi?id=742426">https://bugzilla.redhat.com/show_bug.cgi?id=742426</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2916171">5.6. Notification message wraps despite having sufficient width</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2929284">Description:</h5>
+					In the translation editor, when the browser window is narrow or the project/document name is long, notification messages (e.g. save notifications) wrap to 2 or more lines and are not fully visible as they extend below the blue bar.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2891269">More Information:</h5>
+					<a href="https://bugzilla.redhat.com/show_bug.cgi?id=772820">https://bugzilla.redhat.com/show_bug.cgi?id=772820</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2954428">5.7. Repeatedly resorting language list may cause stack trace</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2944810">Description:</h5>
+					Repeatedly resorting the language list may cause a stack trace to occur.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2862696">More Information:</h5>
+					<a href="https://bugzilla.redhat.com/show_bug.cgi?id=701496">https://bugzilla.redhat.com/show_bug.cgi?id=701496</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2862716">5.8. Saving the last entry automatically moves to the top entry of next page</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2862723">Description:</h5>
+					Saving the last entry automatically moves to the top entry of next page. This makes translator unable to check the string just saved.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2862738">More Information:</h5>
+					<a href="https://bugzilla.redhat.com/show_bug.cgi?id=743157">https://bugzilla.redhat.com/show_bug.cgi?id=743157</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2862757">5.9. Shortcut navigating with keys (Alt+j/k/up/down) or mouse in Chrome can lose focus on editor window</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2862765">Description:</h5>
+					When moving from one editor window to another in Chrome, whether using navigation key shortcuts or by clicking in the target cell, the editor window for the new cell opens but immediately loses focus. A user cannot type in the cell until they have used Tab / Alt+Tab or a mouse click to move focus to the cell.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2862783">More Information:</h5>
+					<a href="https://bugzilla.redhat.com/show_bug.cgi?id=728851">https://bugzilla.redhat.com/show_bug.cgi?id=728851</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2939785">5.10. User security permissions are cached and require logout/login to refresh when changes are made</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2939793">Description:</h5>
+					Permissions are only updated when a user logs in. Changes made to projects, such as adding a new project or adding a user as a maintainer, are not reflected until the user logs out and logs back in.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2939809">More Information:</h5>
+					<a href="https://bugzilla.redhat.com/show_bug.cgi?id=730199">https://bugzilla.redhat.com/show_bug.cgi?id=730199</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2939828">5.11. Validation links do not expire</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2939835">Description:</h5>
+					Email validation links do not expire. Clicking an old email validation link changes the user's email address even when the link has already been used and the email address has been subsequently changed.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2939851">More Information:</h5>
+					<a href="https://bugzilla.redhat.com/show_bug.cgi?id=750104">https://bugzilla.redhat.com/show_bug.cgi?id=750104</a>
+				</div></div><div class="section"><div class="titlepage"><div><div><h3 class="title" id="id2939870">5.12. Zanata doesnt give out a warning/error message when losing the connection</h3></div></div></div><div class="formalpara"><h5 class="formalpara" id="id2939878">Description:</h5>
+					When working on a document on the workspace, if the user loses the connection (specifically VPN drop out in this case, internet connectivity still worked), the user is not notified in any way. Zanata still appears to accept and save changes on the current page of the workspace.
+				</div><div class="formalpara"><h5 class="formalpara" id="id2939895">More Information:</h5>
+					<a href="https://bugzilla.redhat.com/show_bug.cgi?id=728415">https://bugzilla.redhat.com/show_bug.cgi?id=728415</a>
+				</div></div></div></div></body></html>
