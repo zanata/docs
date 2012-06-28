@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>2.3.4. Java variable validations in translation editor</title><link rel="stylesheet" type="text/css" href="Common_Content/css/default.css" /><link rel="stylesheet" media="print" href="Common_Content/css/print.css" type="text/css" /><meta name="generator" content="publican 3.0" /><meta name="package" content="Zanata-Release_Notes-1.6-en-US-0-0" /><link rel="home" href="index.html" title="Release Notes" /><link rel="up" href="Section-Web_Editor_Features.html" title="2.3. Web Editor Features" /><link rel="prev" href="Enhanced_Glossary_Integration.html" title="2.3.3. Enhanced Glossary Integration" /><link rel="next" href="Offline_translation_feature_via_web_UI.html" title="2.3.5. Offline translation feature via Web Interface" /></head><body><p id="title"><a class="left" href="https://fedorahosted.org/publican"><img src="Common_Content/images/image_left.png" alt="Product Site" /></a><a class="right" href="https://fedorahosted.org/publican"><img src="Common_Content/images/image_right.png" alt="Documentation Site" /></a></p><ul class="docnav"><li class="previous"><a accesskey="p" href="Enhanced_Glossary_Integration.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="Offline_translation_feature_via_web_UI.html"><strong>Next</strong></a></li></ul><div class="section" id="Java_variable_validations_in_translation_editor"><div class="titlepage"><div><div><h3 class="title" id="Java_variable_validations_in_translation_editor">2.3.4. Java variable validations in translation editor</h3></div></div></div><div class="para">
+		Zanata did not detect inconsistencies in Java-style variables between source strings and translated strings. As a consequence, translators could modify Java variables embedded in strings, causing compilation or runtime errors in localised builds of Java software projects.
+	</div><div class="para">
+		Zanata 1.6 adds a validator to the web editor to check for Java variables in the source and translated strings.
+	</div><div class="para">
+		Java style variables use an index number and may have a format specifier. The validator checks that:
+	</div><div class="itemizedlist"><ul><li class="listitem"><div class="para">
+				all index numbers that are present in source are present in target
+			</div></li><li class="listitem"><div class="para">
+				all index numbers that are present in target are present in source
+			</div></li><li class="listitem"><div class="para">
+				each index number is present the same number of times in the source and target
+			</div></li></ul></div><div class="para">
+		A validation error is displayed near the string currently being edited if any of the above conditions are not met.
+	</div><div class="para">
+		The validator does not yet perform any validation of format specifiers.
+	</div><div class="para">
+		For more information see <a href="https://bugzilla.redhat.com/show_bug.cgi?id=802577">https://bugzilla.redhat.com/show_bug.cgi?id=802577</a>.
+	</div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="Enhanced_Glossary_Integration.html"><strong>Prev</strong>2.3.3. Enhanced Glossary Integration</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="Offline_translation_feature_via_web_UI.html"><strong>Next</strong>2.3.5. Offline translation feature via Web Interf...</a></li></ul></body></html>

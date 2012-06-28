@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Switching_Message_Filter_before_loading_completed_causes_incorrect_filter_result">
+	<title>Switching Message Filter before loading completed causes incorrect filter result</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		If a user changed the message filters while a page was loading, the filter was not applied properly and messages were listed when they should have been filter out. 
+	</para>
+	<para>
+		User input is now is prevented by a modal pop-up during page load, and a user cannot change the filters until page is fully loaded. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=816827"/>. 
+	</para>
+</section>

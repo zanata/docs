@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Enhanced_Glossary_Integration">
+	<title>Enhanced Glossary Integration</title>
+	<para>
+		A Translation Glossary provides standard translations for technical terms. Zanata supports Translation Glossaries. Users requested to be alerted to any applicable Glossary terms when working on a translation unit, and to be able to copy a translation from the Glossary into the current translation unit. 
+	</para>
+	<para>
+		Users were not alerted when relevant Glossary terms existed, and had to manually copy and paste Glossary terms in the translation editor. 
+	</para>
+	<para>
+		Automatic alerting and copy from Glossary have been implemented. When one or more relevant Glossary terms exist, the color of the Glossary tab changes from blue to red. A "Copy" button next to each Glossary term enables the translator to copy Glossary translations to the current translation unit. 
+	</para>
+	<para>
+		For more information refer to <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=788294"/>. 
+	</para>
+</section>

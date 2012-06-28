@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Plural_Form_Support">
+	<title>Plural Form Support</title>
+	<para>
+		In translation files, msg_plural entries provide multiple versions of a noun string. These entries allows software to present the correct singular or plural version of the noun to match a number in a message. Zanata did not support plural forms, and silently ignored msg_plural entries in POT/PO files. 
+	</para>
+	<para>
+		Zanata now supports msg_plural entries. Plurals are now accepted/returned via REST clients, accepted/displayed in the editor UI and in TM search results. 
+	</para>
+	<para>
+		For more information refer to <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=803572"/>. 
+	</para>
+</section>

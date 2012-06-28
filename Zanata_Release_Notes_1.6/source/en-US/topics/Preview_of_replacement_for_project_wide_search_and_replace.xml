@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Preview_of_replacement_for_project_wide_search_and_replace">
+	<title>Project-wide Search and Replace: Preview of replacement</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		Zanata includes powerful find and replace functionality that can be applied to individual search results or to a group of search results. It was not possible to see what the effects of a replace operation were before applying it. 
+	</para>
+	<para>
+		Users can now use the preview feature to see the effect of a replace operation before it is carried out. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=822366"/>. 
+	</para>
+</section>

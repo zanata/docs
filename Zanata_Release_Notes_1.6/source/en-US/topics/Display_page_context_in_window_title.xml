@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Display_page_context_in_window_title">
+	<title>Display page context in window title</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		Zanata's pages did not have human-readable titles for all pages. Users were unable to distinguish between different open browser tabs, and browsers that show a page title in their history would only show "Zanata" for all pages. 
+	</para>
+	<para>
+		Zanata now shows a specific title for each section of the application, except for the Web Editor, and browser history contains these details. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=813193"/>. 
+	</para>
+</section>

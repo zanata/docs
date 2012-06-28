@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Topic213">
+	<title>Server URL in zanata.xml and zanata.ini inconsistent</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		The server-provided sample <filename>zanata.xml</filename> and <filename>zanata.ini</filename> files sometimes had mismatched server URLs. This was because the <filename>zanata.xml</filename> sample used the server configured URL, and the <filename>zanata.ini</filename> used the current navigation URL. 
+	</para>
+	<para>
+		When the two did not match, Zanata clients would not properly associate user configuration from <filename>zanata.ini</filename> with the server specified in <filename>zanata.xml</filename> leading to error messages about "missing user configuration information". 
+	</para>
+	<para>
+		The server-provided sample <filename>zanata.ini</filename> now uses the server configured URL, and the two server-provided sample files now match consistently. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=816453"/>. 
+	</para>
+</section>

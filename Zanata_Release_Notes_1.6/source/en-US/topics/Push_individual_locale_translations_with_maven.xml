@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Push_individual_locale_translations_with_maven">
+	<title>Push individual locale translations with maven</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		In previous versions of Zanata, only project owners could push translations using maven or the python client. Translators were not able to push translations, making offline translations impractical. 
+	</para>
+	<para>
+		Translators can now push translations for individual locales with the <command>-Dzanata.locales</command> option. 
+	</para>
+	<para>
+		Example maven option to push translations for English: <command>-Dzanata.locales=en,es-ES,en-US</command>
+	</para>
+	<para>
+		The specified locales must be a subset of those present in <filename>zanata.xml</filename>, and may be the mapped locale or the local locale. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=736898"/>. 
+	</para>
+</section>

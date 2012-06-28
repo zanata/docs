@@ -1,0 +1,8 @@
+<!ENTITY PRODUCT "Zanata">
+<!ENTITY BOOKID "Release_Notes">
+<!ENTITY YEAR "2012">
+<!ENTITY TITLE "Release Notes">
+<!ENTITY HOLDER "www.zanata.org">
+<!ENTITY BZURL "https://bugzilla.redhat.com/">
+<!ENTITY BZCOMPONENT "documentation">
+<!ENTITY BZPRODUCT "Zanata">

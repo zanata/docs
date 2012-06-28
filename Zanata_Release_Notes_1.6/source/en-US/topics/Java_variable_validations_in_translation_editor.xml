@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Java_variable_validations_in_translation_editor">
+	<title>Java variable validations in translation editor</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		Zanata did not detect inconsistencies in Java-style variables between source strings and translated strings. As a consequence, translators could modify Java variables embedded in strings, causing compilation or runtime errors in localised builds of Java software projects. 
+	</para>
+	<para>
+		Zanata 1.6 adds a validator to the web editor to check for Java variables in the source and translated strings. 
+	</para>
+	<para>
+		Java style variables use an index number and may have a format specifier. The validator checks that: 
+	</para>
+	<itemizedlist>
+		<listitem>
+			<para>
+				all index numbers that are present in source are present in target 
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				all index numbers that are present in target are present in source 
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				each index number is present the same number of times in the source and target 
+			</para>
+		</listitem>
+	</itemizedlist>
+	<para>
+		A validation error is displayed near the string currently being edited if any of the above conditions are not met. 
+	</para>
+	<para>
+		The validator does not yet perform any validation of format specifiers. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=802577"/>. 
+	</para>
+</section>

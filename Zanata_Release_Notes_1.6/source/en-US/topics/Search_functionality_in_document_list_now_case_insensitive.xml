@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Search_functionality_in_document_list_now_case_insensitive">
+	<title>Search functionality in document list now case-insensitive</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		Zanata includes a document list filter to allow users to quickly locate specific documents. This filter was case sensitive, which meant users had to remember the exact case used for a document title. 
+	</para>
+	<para>
+		The document list filter now has an option for case-sensitivity. By default the filter is case- 
+		<emphasis>
+			in 
+		</emphasis>sensitive. To perform a case-sensitive filter, check the "case sensitive" check box next to the filter. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=802582"/>. 
+	</para>
+</section>

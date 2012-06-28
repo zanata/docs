@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Maven_pushTrans_superseded_by_pushType">
+	<title>Maven pushTrans superseded by pushType</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		The maven <command>-Dzanata.pushTrans</command> option is now deprecated and is replaced by <command>-Dzanata.pushType</command>, which can take the following values: 
+	</para>
+	<variablelist>
+		<varlistentry>
+			<term>source</term>
+			<listitem>
+				<para>
+					Push source documents only (This is the default value when not specified) 
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term>trans</term>
+			<listitem>
+				<para>
+					Push translations only 
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term>both</term>
+			<listitem>
+				<para>
+					Push both source documents and translations 
+				</para>
+			</listitem>
+		</varlistentry>
+	</variablelist>
+	<para>
+		If the now deprectated <command>pushTrans</command> option is used, it is interpreted as <command>-Dzanata.pushType=both</command>. 
+	</para>
+	<formalpara>
+		<title>More Information</title>
+		<para>
+			For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=736898"/>. 
+		</para>
+	</formalpara>
+</section>

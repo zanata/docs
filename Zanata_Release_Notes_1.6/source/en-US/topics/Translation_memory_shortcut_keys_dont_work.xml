@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Translation_memory_shortcut_keys_dont_work">
+	<title>Translation memory shortcut keys don't work</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		The code for the translation memory copy shortcut keys Ctrl+Shift+[1-4] checked for characters rather than key codes. The numbers on a keyboard number pad were not recognised, and on some keyboard mappings numbers above 2 were not recognised. 
+	</para>
+	<para>
+		The code was rewritten to recognise keyboard codes, rather than characters. Pressing Ctrl+Shift+[1-4] now copies the translation memory match. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=802191"/>
+	</para>
+</section>

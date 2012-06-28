@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Save_dialog_from_filtering_always_saves_as_approved">
+	<title>Save dialog from filtering always saves as approved</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		When a user checked any of the message filter checkboxes, they were prompted to save their current translation. This translation was always saved as approved. 
+	</para>
+	<para>
+		The Save Dialog that appears when checking a message filter checkbox now contains an additional button "Save as Fuzzy". Users can save their translation as fuzzy by using this button. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=815638"/>. 
+	</para>
+</section>

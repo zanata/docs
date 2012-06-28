@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Option_to_search_in_msgid_msgstr_or_both_for_project_wide_search">
+	<title>Project-wide search: Search in msgid, msgstr, or both</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		Searches in Zanata's web editor would search all strings, both source and target strings. 
+	</para>
+	<para>
+		The new search dialog gives users the ability to specify what content they wish to search: source strings only, target strings only, or both. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=817453"/>. 
+	</para>
+</section>

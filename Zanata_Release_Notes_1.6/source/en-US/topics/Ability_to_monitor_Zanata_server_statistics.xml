@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Ability_to_monitor_Zanata_server_statistics">
+	<title>Server statistics</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		The Zanata server is an application that runs on JBoss Application Server. The performance of a Zanata server is tied to the performance of its underlying JBoss Application Server. Without instrumenting that reports on statistics of the JBoss Application Server that hosts the Zanata server, it is difficult for a server administrator to monitor or tune the performance of a Zanata server. 
+	</para>
+	<para>
+		JavaMelody, a Java EE server monitoring tool is now integrated with the Zanata server. Zanata server administrators can go to the "Administration" menu and select "Server Monitoring" to view the performance statistics for the Zanata instance. 
+	</para>
+	<para>
+		For more information refer to <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=813161"/>. 
+	</para>
+</section>

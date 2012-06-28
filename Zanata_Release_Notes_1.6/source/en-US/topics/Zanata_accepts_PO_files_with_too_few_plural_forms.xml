@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Zanata_accepts_PO_files_with_too_few_plural_forms">
+	<title>Zanata accepts PO files with too few plural forms</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		Zanata handles msg_plural entries in PO files. A msg_plural entry in a PO file must contain a number of the plural forms that matches the value set in the file for nplural, which is the number of plural forms in the target language. Zanata did not validate the number of plural forms in the PO files against the value of nplural, and incorrectly reported the state of msg_plural entry with too few plural forms. 
+	</para>
+	<para>
+		Zanata 1.6 now correctly identifies and reports when a msg_plural entry has too few plural forms. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=814006"/>. 
+	</para>
+</section>

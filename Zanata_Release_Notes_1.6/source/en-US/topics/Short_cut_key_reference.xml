@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Short_cut_key_reference">
+	<title>Short-cut key reference</title>
+	<para>
+		Zanata has a number of shortcut keys that can be used in the web editor to enhance productivity. There was no single point of reference to discover the available key shortcuts in the web editor. Many key shortcuts can be discovered through tooltips on UI elements, but some key shortcuts cannot be discovered through the UI. 
+	</para>
+	<para>
+		Zanata 1.6 adds a key shortcut summary that shows available key shortcuts for the current view. The summary is invoked by pressing <literal>Alt+Y</literal>, and hidden by clicking outside the summary. 
+	</para>
+	<para>
+		The list of shortcuts is not complete. Editor key shortcuts have not yet been added to the summary. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=830000"/>. 
+	</para>
+</section>

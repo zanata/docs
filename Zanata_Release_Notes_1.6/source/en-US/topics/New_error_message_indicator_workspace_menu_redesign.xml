@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="New_error_message_indicator_workspace_menu_redesign">
+	<title>New error message indicator, workspace menu redesign</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		Zanata provided notifications and error messages in the page header of the editor. The page header took up screen space, which was not available for translation units. Additionally, notifications and error messages would be overwritten by later messages. This message overwriting made it difficult to read a message if it was immediately followed by another. 
+	</para>
+	<para>
+		In Zanata 1.6 the page header uses a single line, leaving more space for translation. Error messages now appear in pop-ups. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=824269"/>. 
+	</para>
+</section>

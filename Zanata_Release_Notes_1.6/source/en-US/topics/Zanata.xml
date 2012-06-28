@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Zanata">
+	<title>Zanata</title>
+	<para>
+		Zanata is a web-based translation management system. Zanata provides an interface that allows a community of translators to work side-by-side on translation projects with nothing more than an Internet connection and a web-browser. Zanata provides APIs and client-side tools that allow software developers and documentation authors to push content to the server for translation and pull completed translations back for their project. 
+	</para>
+	<para>
+		Zanata is an open source project sponsored by Red Hat. The project website is found at <ulink url="http://www.zanata.org"/>. A hosted instance of Zanata that can be freely used to host and translate projects is found at <ulink url="http://translate.zanata.org"/>. 
+	</para>
+</section>

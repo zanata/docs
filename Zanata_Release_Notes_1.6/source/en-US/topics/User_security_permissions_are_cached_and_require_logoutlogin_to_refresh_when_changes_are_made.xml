@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="User_security_permissions_are_cached_and_require_logoutlogin_to_refresh_when_changes_are_made">
+	<title>User security permissions are cached and require logout/login to refresh when changes are made</title>
+	<para>
+		Zanata performed authorization checks by querying the security entity representing the user. However, when a user is made an owner of the project the user entity is not updated - rather, the project entity is updated. The user entity is only updated with information about project ownership when the user logs in and the user entity is created. When a user was given ownership of a project, they had to log out and log back in again before Zanata would authorize them as the owner of the project. 
+	</para>
+	<para>
+		The authorization check is now made by querying the project entity, rather than the user entity. Users no longer have to log out and log back in again to update their authorizations when they are assigned ownership of a project. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=730199"/>. 
+	</para>
+</section>

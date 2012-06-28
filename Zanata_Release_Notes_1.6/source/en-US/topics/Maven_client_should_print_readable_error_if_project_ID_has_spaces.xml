@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Maven_client_should_print_readable_error_if_project_ID_has_spaces">
+	<title>Maven client should print readable error if project ID has spaces</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		Spaces are not allowed in Zanata project names. When a space was included in a project name, either in <filename>zanata.xml</filename> or as a command line argument, the error message did not clearly explain the issue. 
+	</para>
+	<para>
+		When a space is included in a project name now, the error message clearly explains the problem. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=701524"/>. 
+	</para>
+</section>

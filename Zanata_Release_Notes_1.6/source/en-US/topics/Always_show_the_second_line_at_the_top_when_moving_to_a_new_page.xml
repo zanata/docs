@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Always_show_the_second_line_at_the_top_when_moving_to_a_new_page">
+	<title>First row missing when moving to a new page of translation</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		Saving the last translation unit on a page in the web editor moves to the next page. The new page scrolled in such a way that the second row was at the top, and the first row was scrolled off the page. 
+	</para>
+	<para>
+		The web editor's scrolling is modified, and when scrolling to a new page the first row appears at the top of the page. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=803557"/>. 
+	</para>
+</section>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Project_Groups">
+	<title>Project Groups</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		Versions of multiple projects may have a real-world relationship. For example, the versions of various projects which go into a certain version of Fedora, and need to be translated together. Zanata had no formal support for this type of organization. 
+	</para>
+	<para>
+		Zanata 1.6 introduces Project Groups, which can contain specific versions of various projects. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=800869"/>. 
+	</para>
+</section>

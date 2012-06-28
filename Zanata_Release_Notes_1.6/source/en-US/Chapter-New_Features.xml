@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<chapter id="Chapter-New_Features">
+	<title>New Features</title>
+	<section id="Section-Administrator_Features">
+		<title>Administrator Features</title>
+		<xi:include href="topics/Ability_to_monitor_Zanata_server_statistics.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	</section>
+	<section id="Section-Project_Owner_Features">
+		<title>Project Owner Features</title>
+		<xi:include href="topics/Allow_Users_to_Create_Projects.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Allow_Project_Owner_to_Edit_All_Translations_in_Project.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Maven_pushTrans_superseded_by_pushType.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Project_Groups.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Push_individual_locale_translations_with_maven.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	</section>
+	<section id="Section-Web_Editor_Features">
+		<title>Web Editor Features</title>
+		<xi:include href="topics/Ability_to_select_all_text_flows_in_all_documents_on_project_wide_search_page.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Display_page_context_in_window_title.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Enhanced_Glossary_Integration.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Java_variable_validations_in_translation_editor.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Offline_translation_feature_via_web_UI.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Plural_Form_Support.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Project_wide_Find_and_Replace.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Preview_of_replacement_for_project_wide_search_and_replace.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Option_to_search_in_msgid_msgstr_or_both_for_project_wide_search.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Project_wide_Fearch_and_Replace_undo_button.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Search_functionality_in_document_list_now_case_insensitive.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Short_cut_key_reference.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	</section>
+</chapter>

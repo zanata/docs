@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Search_remains_active_after_opening_new_file">
+	<title>Search remains "active" after opening new file</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		The term used in a searches within a document is stored in a history token. When a new document was loaded after a search, the search in the history token was not updated. If the search term was not present in the new document it sometimes made the search box invisible and impossible to clear without manipulating the URL. 
+	</para>
+	<para>
+		The search history token is now cleared with loading a different document. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=803538"/>. 
+	</para>
+</section>

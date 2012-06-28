@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Offline_translation_feature_via_web_UI">
+	<title>Offline translation feature via Web Interface</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		In prior releases of Zanata, translators could download translation work via the Web Interface, but were not able to upload their offline work. 
+	</para>
+	<para>
+		Zanata 1.6 introduces the ability for translators to upload their offline translations in the web interface. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=725319"/>. 
+	</para>
+</section>

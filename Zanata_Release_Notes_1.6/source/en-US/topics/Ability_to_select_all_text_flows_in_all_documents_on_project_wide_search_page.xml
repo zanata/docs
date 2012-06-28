@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Ability_to_select_all_text_flows_in_all_documents_on_project_wide_search_page">
+	<title>Project-wide Search and Replace: Select all text flows in all documents</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		In a large project, a global search may return results from many different documents. When using the "Replace all selected" function, there may be too many results to manually select them all. 
+	</para>
+	<para>
+		Zanata 1.6 introduces a "Select All" function. Now you can search through all documents in a project, then select all of the results, and replace all instances. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=817457"/>. 
+	</para>
+</section>

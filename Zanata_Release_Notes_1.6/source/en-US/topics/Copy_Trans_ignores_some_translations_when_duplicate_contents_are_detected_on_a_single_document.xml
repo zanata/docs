@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Copy_Trans_ignores_some_translations_when_duplicate_contents_are_detected_on_a_single_document">
+	<title>Copy Trans ignores some translations when duplicate contents are detected on a single document</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		When users pushed documents with the same content in different translation units to a new version of a project, copy trans sometimes skipped some of the translation units with duplicate content. 
+	</para>
+	<para>
+		The copyTrans mechanism now accounts for duplicate content scenarios and correctly copies them to the new version. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=825076"/>. 
+	</para>
+</section>

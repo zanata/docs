@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Project_wide_Find_and_Replace">
+	<title>Project-wide Search and Replace</title>
+	<para>
+		Translation projects contain a number of distinct files with source material. Applying the same change across a number of files requires opening each file, finding the item that needs to be changed, and applying the change. Zanata's Find and Replace function worked within a file, but not across files. 
+	</para>
+	<para>
+		Zanata now has a "Find and Replace" feature that works across all the files in a project. Users can now apply a change across all the files in the project from a single point in the user interface. Please see the bug report for more details on the state of this feature in the alpha release. 
+	</para>
+	<para>
+		For more information refer to <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=703806"/>. 
+	</para>
+</section>

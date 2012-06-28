@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<chapter id="Chapter-Resolved_Issues">
+	<title>Resolved Issues</title>
+	<section id="Section-Administrator_Issues">
+		<title>Administrator Issues</title>
+		<xi:include href="topics/Reindex_operation_takes_a_long_time_on_production_server.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	</section>
+	<section id="Section-Project_Owner_Issues">
+		<title>Project Owner Issues</title>
+		<xi:include href="topics/Copy_Trans_ignores_some_translations_when_duplicate_contents_are_detected_on_a_single_document.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Maven_client_should_print_readable_error_if_project_ID_has_spaces.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/213.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	</section>
+	<section id="Section-Web_Editor_Issues">
+		<title>Web Editor Issues</title>
+		<xi:include href="topics/Always_show_the_second_line_at_the_top_when_moving_to_a_new_page.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/New_error_message_indicator_workspace_menu_redesign.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Save_dialog_from_filtering_always_saves_as_approved.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Search_remains_active_after_opening_new_file.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Switching_Message_Filter_before_loading_completed_causes_incorrect_filter_result.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Translation_memory_shortcut_keys_dont_work.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/User_security_permissions_are_cached_and_require_logoutlogin_to_refresh_when_changes_are_made.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Zanata_accepts_PO_files_with_too_few_plural_forms.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	</section>
+</chapter>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Format_of_these_Release_Notes">
+	<title>Format of these Release Notes</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		These release notes cover Zanata 1.6, and comprises chapters covering: 
+	</para>
+	<itemizedlist>
+		<listitem>
+			<para>
+				New Features added in the release 
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Bugs that were resolved with the release 
+			</para>
+		</listitem>
+		<!--<listitem>
+			<para>
+			Known Issues with this release
+			</para>
+		</listitem>-->
+	</itemizedlist>
+	<para>
+		Each chapter is divided into three sections: 
+	</para>
+	<itemizedlist>
+		<listitem>
+			<para>
+				Server Administration 
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Project Owner 
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Web Editor 
+			</para>
+		</listitem>
+	</itemizedlist>
+</section>

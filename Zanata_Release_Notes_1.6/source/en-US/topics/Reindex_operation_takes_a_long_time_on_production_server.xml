@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Reindex_operation_takes_a_long_time_on_production_server">
+	<title>Reindex operation takes a long time on production server</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		Zanata has a number of indexes that are used to locate information on the server. These indexes are periodically updated. The search re-indexing operation always discarded all existing indexes. This caused re-indexing to take a long time, even when only a single class was being reindexed. While the re-indexing operation was taking place, searches did not return good results. 
+	</para>
+	<para>
+		The Search re-index backing beans now take a set of boolean options for each indexable class. These options determine whether existing indexes for the class will be purged, whether re-index will be performed on entities of the class, and whether the index for the class will be optimized. These options are presented in a table on the "Manage Search" page under the Administration menu. 
+	</para>
+	<para>
+		Classes can now be re-indexed separately, allowing for shorter re-index time per operation. Existing indexes can be kept during re-indexing, so searches may be able to return good results during re-index. 
+	</para>
+	<para>
+		For more information see <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=815197"/>. 
+	</para>
+</section>

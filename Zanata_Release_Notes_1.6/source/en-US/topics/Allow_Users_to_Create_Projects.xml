@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Allow_Users_to_Create_Projects">
+	<title>Allow Users to Create Projects</title>
+	<!-- The title is inherited from the title property of the topic -->
+	<para>
+		Creating a new translation project required server administrator privileges. Users had to request a translation project through a ticketing system and wait for a server administrator to create the project on their behalf. 
+	</para>
+	<para>
+		Users can now create a translation project by following these steps: 
+	</para>
+	<procedure>
+		<step>
+			<para>
+				Log in 
+			</para>
+		</step>
+		<step>
+			<para>
+				Click “Project” 
+			</para>
+		</step>
+		<step>
+			<para>
+				Click “Create project” 
+			</para>
+		</step>
+		<step>
+			<para>
+				Fill in “Project ID”,”Name”,”Description” 
+			</para>
+		</step>
+		<step>
+			<para>
+				Click “Save” 
+			</para>
+		</step>
+	</procedure>
+	<note>
+		<para>
+			The user who creates the project becomes the project's owner. 
+		</para>
+	</note>
+	<para>
+		For more information refer to <ulink url="https://bugzilla.redhat.com/show_bug.cgi?id=727789"/>. 
+	</para>
+</section>
